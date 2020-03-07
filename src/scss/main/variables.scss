@@ -1,7 +1,25 @@
 :root {
+    --bg: #F9F9F9;
+
     --black: #000;
     --white: #FFF;
     --blue: #3A70C1;
+    --blue-light: #95BBF2;
+
+    --green: #81B562;
+
+    --pink: #F7EBEB;
+
+    --gray1: #5B5B5B;
+    --gray2: #C4C4C4;
+    --gray3: #ABABAB;
+    --gray4: #313131;
+
+    --orange: #EDA344;
+    --orange-dark: #DF9330;
+
+    --red: #C34628;
+    --red-light: #DE6649;
 }
 $grid-breakpoints: (
     xs: 0,

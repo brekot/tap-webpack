@@ -1,0 +1,44 @@
+// Подвал
+.main-footer {
+    background-color: var(--gray4);
+    color: var(--white);
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        height: 110px;
+    }
+    &__left {
+        display: flex;
+        position: relative;
+        height: 47px;
+    }
+    &__logo {
+        margin: 0 10px 0 0;
+    }
+    &__logo-word {
+        padding: 3px 0 0;
+    }
+    &__desc {
+        position: absolute;
+        bottom: 0;
+        left: 42px;
+        font-size: 14px;
+        line-height: 16px;
+        white-space: nowrap;
+    }
+    &__right {
+        margin: 0 0 0 auto;
+    }
+}
+
+// Нижнее меню
+.menu-footer {
+    display: flex;
+
+    &__link {
+        font-size: 12px;
+        margin: 0 0 0 15px;
+        color: var(--blue-light);
+    }
+}

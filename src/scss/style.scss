@@ -1,3 +1,12 @@
-@import "./main/variables";
-@import "./main/reboot";
-@import "./main/grid";
+@import "./main/variables"; // Переменные
+@import "./main/reboot"; // Сброс стилей
+@import "./main/grid"; // Сетка + миксины
+
+// Шаблон
+@import "./template/header"; // Шапка
+@import "./template/menu.search"; // Меню/Поиск
+@import "./template/main"; // Рабочая облать
+@import "./template/footer"; // Подвал
+
+// Элементы
+@import "./elem/btn"; // Кнопки

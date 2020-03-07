@@ -105,8 +105,8 @@ const config = {
                 to: "./local/img"
             },
             {
-                from: "./src/uploads",
-                to: "./local/uploads"
+                from: "./src/upload",
+                to: "./local/upload"
             }
         ])
     ].concat(htmlPlugins)
