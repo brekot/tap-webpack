@@ -10,3 +10,12 @@
 
 // Элементы
 @import "./elem/btn"; // Кнопки
+@import "./elem/tags"; // Теги
+@import "./elem/map"; // Карты
+@import "./elem/page.head"; // Заголовоки страниц
+
+// Список недвижимости
+@import "./page/apartment.list/list"; // Список
+
+// Список пользователей
+@import "./page/user.list/list"; // Список

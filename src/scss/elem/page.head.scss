@@ -1,0 +1,15 @@
+.page-head {
+    display: flex;
+    align-items: center;
+    margin: 0 0 45px;
+
+    &__title {
+        margin: 0;
+    }
+    &__count {
+        margin: 10px 0 0 10px;
+    }
+    &__btn {
+        margin: 0 0 0 auto;
+    }
+}

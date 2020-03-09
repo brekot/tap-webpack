@@ -34,6 +34,7 @@ h1, .h1 {
     line-height: 42px;
     color: var(--black);
     margin: 0 0 17px;
+    font-weight: normal;
 }
 
 h2, .h2 {
@@ -41,6 +42,7 @@ h2, .h2 {
     line-height: 28px;
     color: var(--black);
     margin: 0 0 21px;
+    font-weight: normal;
 }
 
 h3, .h3 {
@@ -48,6 +50,7 @@ h3, .h3 {
     line-height: 21px;
     color: var(--black);
     margin: 0 0 17px;
+    font-weight: normal;
 }
 
 h4, .h4 {
@@ -55,6 +58,7 @@ h4, .h4 {
     line-height: 21px;
     color: var(--gray2);
     margin: 0 0 21px;
+    font-weight: normal;
 }
 
 h5, .h5 {
@@ -62,6 +66,7 @@ h5, .h5 {
     line-height: 16px;
     color: var(--gray2);
     margin: 0 0 17px;
+    font-weight: normal;
 }
 
 p {
@@ -190,4 +195,8 @@ input[type="checkbox"] {
 textarea {
     overflow: auto;
     resize: vertical;
+}
+
+.position-relative {
+    position: relative;
 }

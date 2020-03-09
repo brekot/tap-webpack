@@ -69,6 +69,10 @@
         align-items: center;
         padding: 0 10px 0 15px;
         background: url(img/filter.icon.svg) no-repeat center left;
+
+        &:hover {
+            color: var(--red);
+        }
     }
     &__count {
         background: var(--red);
