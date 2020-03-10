@@ -3,12 +3,9 @@
     box-shadow: 0 0 4px rgba(0,0,0,.15);
     border-radius: 5px;
     overflow: hidden;
-    margin: 0 0 30px;
     background-color: var(--white);
 }
 .map-line {
     height: 165px;
-}
-.map-block {
-    height: 265px;
+    margin: 0 0 30px;
 }

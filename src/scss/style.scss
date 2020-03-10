@@ -2,6 +2,7 @@
 @import "./main/reboot"; // Сброс стилей
 @import "./main/grid"; // Сетка + миксины
 @import "./main/jquery.formstyler"; // Стилизация элементов
+@import "~swiper/src/swiper"; // Слайдер
 
 // Шаблон
 @import "./template/header"; // Шапка
@@ -16,10 +17,19 @@
 @import "./elem/tabs"; // Табы
 @import "./elem/form"; // Формы
 @import "./elem/map"; // Карты
+@import "./elem/table"; // Таблицы
+@import "./elem/comfort"; // Список удобств с иконками
 @import "./elem/page.head"; // Заголовоки страниц
+@import "./elem/share.complaint"; // Пожаловаться/Поделиться
+@import "./elem/apartment.more"; // Похожие объявления
 
 // Список недвижимости
 @import "./page/apartment.list/list"; // Список
+
+// Объект недвижимости
+@import "./page/apartment.detail/detail"; // Детальная
+@import "./page/apartment.detail/aside"; // Боковая область
+@import "./page/apartment.detail/slider"; // Слайдер
 
 // Список пользователей
 @import "./page/user.list/list"; // Список

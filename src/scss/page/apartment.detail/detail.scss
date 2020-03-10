@@ -1,0 +1,127 @@
+.apartment-detail-top {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+    color: var(--gray2);
+    font-size: 14px;
+
+    &__point {
+        display: flex;
+        align-items: center;
+
+        &:after {
+            content: "";
+            background-color: var(--gray2);
+            display: inline-block;
+            height: 6px;
+            width: 6px;
+            margin: 0 10px;
+            border-radius: 50%;
+        }
+    }
+    &__favorite {
+        background: url(img/apartment.list.favorite.svg) no-repeat left center / contain;
+        color: var(--gray2);
+        text-decoration: none;
+        padding: 0 0 0 25px;
+        line-height: 20px;
+        margin: 0 0 0 auto;
+
+        &:hover {
+            color: var(--gray2);
+        }
+    }
+}
+
+.apartment-detail {
+    display: flex;
+
+    &__block {
+        width: 660px;
+        margin: 0 25px 0 0;
+    }
+    &__aside {
+        width: 235px;
+    }
+}
+
+.apartment-detail-one {
+    display: flex;
+    padding: 0 0 35px;
+    margin: 0 0 35px;
+    border-bottom: 1px solid var(--gray5);
+
+    &__left {
+        width: 260px;
+        padding: 0 35px 0 0;
+    }
+    &__right {
+        width: calc(100% - 260px);
+    }
+}
+
+.apartment-place {
+
+    &__link {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0 0 5px;
+        display: inline-block;
+    }
+    &__desc {
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--gray2);
+    }
+    &__addr {
+        margin: 20px 0 10px;
+    }
+}
+
+.apartment-detail-comfort {
+    padding: 0 0 35px;
+    margin: 0 0 35px;
+    border-bottom: 1px solid var(--gray5);
+
+    &__hide:not(.active) {
+        display: none;
+    }
+}
+
+.apartment-detail-text {
+    margin: 0 0 15px;
+
+    &__hide:not(.active) {
+        height: 38px;
+        overflow: hidden;
+    }
+}
+
+.apartment-detail__show-all {
+    display: inline-block;
+    margin: 20px 0 0;
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+    padding: 0 15px 0 0;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    &:after {
+        content: "";
+        border-left: 1px solid var(--blue);
+        border-bottom: 1px solid var(--blue);
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        transform: rotate(-45deg);
+        right: 0;
+        top: 50%;
+        margin: -4px 0 0;
+    }
+    &_active:after {
+        transform: rotate(-225deg);
+        margin: -2px 0 0;
+    }
+}

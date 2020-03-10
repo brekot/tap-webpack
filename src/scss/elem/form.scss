@@ -122,8 +122,7 @@
         transition: all .3s linear;
 
         &:hover {
-            background-color: var(--red-light);
-            color: var(--white);
+            color: var(--red);
         }
     }
     &__item {
@@ -167,8 +166,7 @@
             border: none;
         }
         &:hover {
-            background-color: var(--red-light);
-            color: var(--white);
+            color: var(--red);
         }
     }
     &__input:checked + .checkbox-line__label {
@@ -198,8 +196,7 @@
         margin: 0 15px 20px 0;
 
         &:hover {
-            background-color: var(--red-light);
-            color: var(--white);
+            color: var(--red);
         }
     }
     &__input:checked + .checkbox-blocks__label {

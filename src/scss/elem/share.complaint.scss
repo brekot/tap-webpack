@@ -1,0 +1,31 @@
+.share-complaint {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--gray3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+
+    &__share {
+        display: flex;
+        align-items: center;
+
+        &-title {
+            margin: 0 10px 0 0;
+        }
+    }
+    &__complaint {
+        color: var(--gray3);
+    }
+    .ya-share2 {
+
+        &__badge {
+            background-color: var(--gray2) !important;
+            transition: all .3s linear;
+        }
+        &__link:hover .ya-share2__badge {
+            background-color: var(--gray1) !important;
+        }
+    }
+}

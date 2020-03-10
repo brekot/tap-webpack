@@ -112,7 +112,6 @@
             content: "";
             position: absolute;
             right: 15px;
-            background-color: var(--green);
             border-radius: 50%;
             top: 50%;
             transform: translate(0, -50%);
@@ -129,6 +128,12 @@
             top: 50%;
             margin: -4px 0 0;
         }
+    }
+    &__online:before {
+        background-color: var(--green);
+    }
+    &__offline:before {
+        background-color: var(--red);
     }
     &__avatar {
         height: 28px;

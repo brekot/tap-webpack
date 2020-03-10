@@ -1,0 +1,15 @@
+.table-first {
+    font-size: 14px;
+    line-height: 26px;
+
+    &__prop {
+        color: var(--gray2);
+        padding: 0 10px 0 0;
+        width: 155px;
+    }
+    &__value {
+        color: var(--black);
+        font-weight: 700;
+        padding: 0;
+    }
+}

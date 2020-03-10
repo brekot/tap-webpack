@@ -1,0 +1,85 @@
+.apartment-aside {
+
+    &__price {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    &__info {
+        font-size: 18px;
+        line-height: 30px;
+        display: flex;
+        color: var(--gray2);
+        margin: 0 0 10px;
+
+        &-point {
+
+            &:after {
+                content: "";
+                background-color: var(--gray2);
+                display: inline-block;
+                height: 6px;
+                width: 6px;
+                margin: 0 10px;
+                border-radius: 50%;
+            }
+        }
+    }
+    &__btn {
+        margin: 15px 0 0;
+        background: var(--pink);
+        border-radius: 5px;
+    }
+    &__link {
+        text-align: center;
+        color: var(--blue);
+        padding: 15px 0;
+        font-size: 14px;
+    }
+}
+
+.user-aside {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+
+    &__pict {
+        width: 60px;
+        margin: 0 15px 0 0;
+    }
+    &__img {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+    }
+    &__name {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0 0 5px;
+    }
+    &__status {
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--gray3);
+        position: relative;
+        padding: 0 0 0 15px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            margin: 1px 0 0;
+        }
+        &_online:before {
+            background-color: var(--green);
+        }
+        &_offline:before {
+            background-color: var(--red);
+        }
+    }
+}

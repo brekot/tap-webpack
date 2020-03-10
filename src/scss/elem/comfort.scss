@@ -1,0 +1,53 @@
+.comfort-list {
+
+    &_columns {
+        columns: 2;
+    }
+    &__item {
+        font-weight: 700;
+        font-size: 14px;
+        position: relative;
+        padding: 10px 0 10px 35px;
+    }
+    &__item:before {
+        background-repeat: no-repeat;
+        background-position: 50%;
+        content: "";
+        position: absolute;
+        height: 24px;
+        width: 26px;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    &__icon1:before {
+        background-image: url(img/comfort.icon1.svg);
+    }
+    &__icon2:before {
+        background-image: url(img/comfort.icon2.svg);
+    }
+    &__icon3:before {
+        background-image: url(img/comfort.icon3.svg);
+    }
+    &__icon4:before {
+        background-image: url(img/comfort.icon4.svg);
+    }
+    &__icon5:before {
+        background-image: url(img/comfort.icon5.svg);
+    }
+    &__icon6:before {
+        background-image: url(img/comfort.icon6.svg);
+    }
+    &__icon7:before {
+        background-image: url(img/comfort.icon7.svg);
+    }
+    &__icon8:before {
+        background-image: url(img/comfort.icon8.svg);
+    }
+    &__icon9:before {
+        background-image: url(img/comfort.icon9.svg);
+    }
+    &__icon10:before {
+        background-image: url(img/comfort.icon10.svg);
+    }
+}
