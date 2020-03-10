@@ -51,16 +51,7 @@
         }
     }
     &__favorite {
-        background: url(img/apartment.list.favorite.svg) no-repeat left center / contain;
-        color: var(--gray2);
         font-size: 14px;
-        text-decoration: none;
-        padding: 0 0 0 25px;
-        line-height: 20px;
-
-        &:hover {
-            color: var(--gray2);
-        }
     }
     &__info {
         display: flex;

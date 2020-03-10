@@ -30,7 +30,6 @@
         display: flex;
         margin: 0 0 15px 0;
         align-items: center;
-        justify-content: space-between;
 
         &-first {
             max-width: calc(100% - 260px);
@@ -57,19 +56,10 @@
         color: var(--gray2);
     }
     &__favorite {
-        background: url(img/apartment.list.favorite.svg) no-repeat left center / contain;
-        color: var(--gray2);
         font-size: 14px;
-        text-decoration: none;
-        padding: 0 0 0 25px;
-        line-height: 20px;
-
-        &:hover {
-            color: var(--gray2);
-        }
+        margin: 0 0 0 auto;
     }
     &__more {
-        display: inline-block;
         margin: 0 0 0 15px;
     }
     &__info {

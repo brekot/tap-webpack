@@ -10,36 +10,46 @@
     <h1 class="page-head__title">1-к квартира на ул. Габишева</h1>
 </div>
 
-<div class="apartment-detail-top">
-    <span class="apartment-detail-top__point">
-        Создано 23 ноября 2016 года
+<div class="page-sub-head">
+    <span>
+        Создано 23 ноября 2016 года&nbsp;&nbsp;●&nbsp;&nbsp;2563 просмотров
     </span>
     <span>
-        2563 просмотров
+        <a href="javascript:;" class="favorite-btn">
+            <svg>
+                <use xlink:href="/local/img/sprite.svg#icon-favorite"></use>
+            </svg>
+            Добавить в избранные
+        </a>
     </span>
-    <a href="javascript:;" class="apartment-detail-top__favorite">
-        Добавить в избранные
-    </a>
 </div>
 
 <div class="apartment-slider">
     <div class="apartment-slider__slider swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="/local/upload/apartment.slide1.jpg" alt="">
+            <div class="swiper-slide apartment-slider__slide">
+                <img class="apartment-slider__img" src="/local/upload/apartment.slide1.jpg" alt="">
             </div>
-            <div class="swiper-slide">
-                <img src="/local/upload/apartment.slide2.jpg" alt="">
+            <div class="swiper-slide apartment-slider__slide">
+                <img class="apartment-slider__img" src="/local/upload/apartment.slide2.jpg" alt="">
             </div>
-            <div class="swiper-slide">
-                <img src="/local/upload/apartment.slide3.jpg" alt="">
+            <div class="swiper-slide apartment-slider__slide">
+                <img class="apartment-slider__img" src="/local/upload/apartment.slide3.jpg" alt="">
             </div>
-            <div class="swiper-slide">
-                <img src="/local/upload/apartment.slide4.jpg" alt="">
+            <div class="swiper-slide apartment-slider__slide">
+                <img class="apartment-slider__img" src="/local/upload/apartment.slide4.jpg" alt="">
             </div>
         </div>
-        <a href="javascript:;" class="swiper-button-prev"></a>
-        <a href="javascript:;" class="swiper-button-next"></a>
+        <a href="javascript:;" class="apartment-slider__prev">
+            <svg class="apartment-slider__str">
+                <use xlink:href="/local/img/sprite.svg#arrow-prev"></use>
+            </svg>
+        </a>
+        <a href="javascript:;" class="apartment-slider__next">
+            <svg class="apartment-slider__str">
+                <use xlink:href="/local/img/sprite.svg#arrow-next"></use>
+            </svg>       
+        </a>
     </div>
 </div>
 
@@ -173,8 +183,7 @@
         <div class="apartment-aside">
             <div class="apartment-aside__price">15 000 руб/мес</div>
             <div class="apartment-aside__info">
-                <span class="apartment-aside__info-point">без к/у</span>
-                <span>залог на месяц</span>
+                без к/у&nbsp;&nbsp;●&nbsp;&nbsp;залог на месяц
             </div>
             <div class="user-aside">
                 <div class="user-aside__pict">
@@ -186,9 +195,9 @@
                 </div>
             </div>
             <a href="javascript:;" class="btn btn-full-width btn-white">Написать сообщение</a>
-            <div class="apartment-aside__btn">
+            <div class="user-aside-btn">
                 <a href="javascript:;" class="btn btn-full-width btn-lg btn-red">Показать все контакты</a>
-                <div class="apartment-aside__link">
+                <div class="user-aside-btn__link">
                     Требуется <a href="javascript:;">подписка</a>
                 </div>
             </div>
@@ -197,77 +206,11 @@
     </aside>
 </div>
 
-<div class="apartment-more">
-    <div class="apartment-more__title">ПОХОЖИЕ ОБЪЯВЛЕНИЯ</div>
-    <div class="apartment-more__items">
-        <div class="apartment-more__item">
-            <a href="javascript::" class="apartment-more__pict">
-                <img class="apartment-more__img" src="/local/upload/apartment.more.jpg" alt="">
-            </a>
-            <div class="apartment-more__block">
-                <a href="javascript::" class="apartment-more__name">
-                    1комнатная на пр. Победы
-                </a>
-                <div class="apartment-more__desc">
-                    Плата за месяц
-                </div>
-                <div class="apartment-more__price">
-                    15 000 р./мес.
-                </div>
-                <div class="tags">
-                    <a href="javascript:;" class="tags__link">#теги</a>
-                    <a href="javascript:;" class="tags__link">#теги</a>
-                    <a href="javascript:;" class="tags__link">#тегидлинные</a>
-                    <a href="javascript:;" class="tags__link">#тегидлинныеикороткие</a>
-                </div>
-            </div>
-        </div>
-        <div class="apartment-more__item">
-            <a href="javascript::" class="apartment-more__pict">
-                <img class="apartment-more__img" src="/local/upload/apartment.more.jpg" alt="">
-            </a>
-            <div class="apartment-more__block">
-                <a href="javascript::" class="apartment-more__name">
-                    1комнатная на пр. Победы
-                </a>
-                <div class="apartment-more__desc">
-                    Плата за месяц
-                </div>
-                <div class="apartment-more__price">
-                    15 000 р./мес.
-                </div>
-                <div class="tags">
-                    <a href="javascript:;" class="tags__link">#теги</a>
-                    <a href="javascript:;" class="tags__link">#теги</a>
-                    <a href="javascript:;" class="tags__link">#тегидлинные</a>
-                    <a href="javascript:;" class="tags__link">#тегидлинныеикороткие</a>
-                </div>
-            </div>
-        </div>
-        <div class="apartment-more__item">
-            <a href="javascript::" class="apartment-more__pict">
-                <img class="apartment-more__img" src="/local/upload/apartment.more.jpg" alt="">
-            </a>
-            <div class="apartment-more__block">
-                <a href="javascript::" class="apartment-more__name">
-                    1комнатная на пр. Победы
-                </a>
-                <div class="apartment-more__desc">
-                    Плата за месяц
-                </div>
-                <div class="apartment-more__price">
-                    15 000 р./мес.
-                </div>
-                <div class="tags">
-                    <a href="javascript:;" class="tags__link">#теги</a>
-                    <a href="javascript:;" class="tags__link">#теги</a>
-                    <a href="javascript:;" class="tags__link">#тегидлинные</a>
-                    <a href="javascript:;" class="tags__link">#тегидлинныеикороткие</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<% var data = {
+    title: "ПОХОЖИЕ ОБЪЯВЛЕНИЯ"
+}; %>
+
+<%= _.template(require('./../includes/apartment_more.html'))(data) %>
 
 <div class="map-line">
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3d79c7d81e2d2bb86febc98c685d15871cce13e1fd1d95297c90a508038a3bdd&amp;width=100%&amp;height=165&amp;lang=ru_RU&amp;scroll=true"></script>

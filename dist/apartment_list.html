@@ -7,7 +7,7 @@
 
         <title>Taptoru - Список недвижимости</title>
         <link rel="shortcut icon" href="favicon.ico" />
-        <link href="./local/template_styles.css?25408cc10fd11c4f1bb4" rel="stylesheet" />
+        <link href="./local/template_styles.css?5701c91b7897b0109bec" rel="stylesheet" />
     </head>
 
     <body>
@@ -27,9 +27,22 @@
                     </div>
                     <div class="main-header__center">
                         <div class="header-links">
-                            <a href="javascript:;" class="header-links__link header-links__link_ads">Мои объявления</a>
-                            <a href="javascript:;" class="header-links__link header-links__link_favorite">Избранные объявления</a>
+                            <a href="javascript:;" class="header-links__link">
+                                <svg class="header-links__icon header-links__icon-ads">
+                                    <use xlink:href="/local/img/sprite.svg#icon-ads"></use>
+                                </svg>
+                                Мои объявления
+                            </a>
+                            <a href="javascript:;" class="header-links__link header-links__link_favorite">
+                                <svg class="header-links__icon header-links__icon-favorite">
+                                    <use xlink:href="/local/img/sprite.svg#header-favorite"></use>
+                                </svg>
+                                Избранные объявления
+                            </a>
                             <a href="javascript:;" class="header-links__link header-links__link_message">
+                                <svg class="header-links__icon header-links__icon-message">
+                                    <use xlink:href="/local/img/sprite.svg#icon-message"></use>
+                                </svg>
                                 Сообщения
                                 <span class="header-links__count">345</span>
                             </a>
@@ -93,6 +106,14 @@
                     ></script>
                 </div>
 
+                <div class="block-sort">
+                    <select class="sort-select">
+                        <option>Сортировка по умолчанию</option>
+                        <option>Сортировка по имени</option>
+                        <option>Сортировка по сумме аренды</option>
+                    </select>
+                </div>
+
                 <div class="apartment-list">
                     <div class="apartment-list__items">
                         <div class="apartment-list__item">
@@ -104,8 +125,13 @@
                                     <div class="apartment-list__head-first">
                                         <a href="javascript:;" class="apartment-list__name">1комнатная на пр. Победы</a>
                                     </div>
-                                    <div>
-                                        <a href="javascript:;" class="apartment-list__favorite">В избранные</a>
+                                    <div class="apartment-list__favorite">
+                                        <a href="javascript:;" class="favorite-btn">
+                                            <svg>
+                                                <use xlink:href="/local/img/sprite.svg#icon-favorite"></use>
+                                            </svg>
+                                            В избранные
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="apartment-list__info">
@@ -133,6 +159,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="apartment-list__item">
                             <a href="javascript:;" class="apartment-list__pict">
                                 <img class="apartment-list__img" src="/local/upload/apartment.list.2.jpg" alt="" />
@@ -142,8 +169,13 @@
                                     <div class="apartment-list__head-first">
                                         <a href="javascript:;" class="apartment-list__name">1комнатная на пр. Победы</a>
                                     </div>
-                                    <div>
-                                        <a href="javascript:;" class="apartment-list__favorite">В избранные</a>
+                                    <div class="apartment-list__favorite">
+                                        <a href="javascript:;" class="favorite-btn">
+                                            <svg>
+                                                <use xlink:href="/local/img/sprite.svg#icon-favorite"></use>
+                                            </svg>
+                                            В избранные
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="apartment-list__info">
@@ -171,6 +203,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="apartment-list__item">
                             <a href="javascript:;" class="apartment-list__pict">
                                 <img class="apartment-list__img" src="/local/upload/apartment.list.3.jpg" alt="" />
@@ -180,8 +213,13 @@
                                     <div class="apartment-list__head-first">
                                         <a href="javascript:;" class="apartment-list__name">1комнатная на пр. Победы</a>
                                     </div>
-                                    <div>
-                                        <a href="javascript:;" class="apartment-list__favorite">В избранные</a>
+                                    <div class="apartment-list__favorite">
+                                        <a href="javascript:;" class="favorite-btn">
+                                            <svg>
+                                                <use xlink:href="/local/img/sprite.svg#icon-favorite"></use>
+                                            </svg>
+                                            В избранные
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="apartment-list__info">
@@ -209,6 +247,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="apartment-list__item">
                             <a href="javascript:;" class="apartment-list__pict">
                                 <img class="apartment-list__img" src="/local/upload/apartment.list.1.jpg" alt="" />
@@ -218,8 +257,13 @@
                                     <div class="apartment-list__head-first">
                                         <a href="javascript:;" class="apartment-list__name">1комнатная на пр. Победы</a>
                                     </div>
-                                    <div>
-                                        <a href="javascript:;" class="apartment-list__favorite">В избранные</a>
+                                    <div class="apartment-list__favorite">
+                                        <a href="javascript:;" class="favorite-btn">
+                                            <svg>
+                                                <use xlink:href="/local/img/sprite.svg#icon-favorite"></use>
+                                            </svg>
+                                            В избранные
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="apartment-list__info">
@@ -247,6 +291,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="apartment-list__item">
                             <a href="javascript:;" class="apartment-list__pict">
                                 <img class="apartment-list__img" src="/local/upload/apartment.list.2.jpg" alt="" />
@@ -256,8 +301,13 @@
                                     <div class="apartment-list__head-first">
                                         <a href="javascript:;" class="apartment-list__name">1комнатная на пр. Победы</a>
                                     </div>
-                                    <div>
-                                        <a href="javascript:;" class="apartment-list__favorite">В избранные</a>
+                                    <div class="apartment-list__favorite">
+                                        <a href="javascript:;" class="favorite-btn">
+                                            <svg>
+                                                <use xlink:href="/local/img/sprite.svg#icon-favorite"></use>
+                                            </svg>
+                                            В избранные
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="apartment-list__info">
@@ -285,6 +335,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="apartment-list__item">
                             <a href="javascript:;" class="apartment-list__pict">
                                 <img class="apartment-list__img" src="/local/upload/apartment.list.3.jpg" alt="" />
@@ -294,8 +345,13 @@
                                     <div class="apartment-list__head-first">
                                         <a href="javascript:;" class="apartment-list__name">1комнатная на пр. Победы</a>
                                     </div>
-                                    <div>
-                                        <a href="javascript:;" class="apartment-list__favorite">В избранные</a>
+                                    <div class="apartment-list__favorite">
+                                        <a href="javascript:;" class="favorite-btn">
+                                            <svg>
+                                                <use xlink:href="/local/img/sprite.svg#icon-favorite"></use>
+                                            </svg>
+                                            В избранные
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="apartment-list__info">
@@ -354,6 +410,6 @@
                 </div>
             </div>
         </footer>
-        <script type="text/javascript" src="./local/js/script.js?25408cc10fd11c4f1bb4"></script>
+        <script type="text/javascript" src="./local/js/script.js?5701c91b7897b0109bec"></script>
     </body>
 </html>

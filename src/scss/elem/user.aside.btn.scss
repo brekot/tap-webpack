@@ -1,0 +1,12 @@
+.user-aside-btn {
+    margin: 15px 0 0;
+    background: var(--gray5);
+    border-radius: 5px;
+
+    &__link {
+        text-align: center;
+        color: var(--blue);
+        padding: 15px 0;
+        font-size: 14px;
+    }
+}

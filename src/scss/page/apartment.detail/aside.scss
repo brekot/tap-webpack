@@ -11,30 +11,6 @@
         display: flex;
         color: var(--gray2);
         margin: 0 0 10px;
-
-        &-point {
-
-            &:after {
-                content: "";
-                background-color: var(--gray2);
-                display: inline-block;
-                height: 6px;
-                width: 6px;
-                margin: 0 10px;
-                border-radius: 50%;
-            }
-        }
-    }
-    &__btn {
-        margin: 15px 0 0;
-        background: var(--pink);
-        border-radius: 5px;
-    }
-    &__link {
-        text-align: center;
-        color: var(--blue);
-        padding: 15px 0;
-        font-size: 14px;
     }
 }
 
@@ -73,7 +49,6 @@
             left: 0;
             top: 50%;
             transform: translate(0, -50%);
-            margin: 1px 0 0;
         }
         &_online:before {
             background-color: var(--green);

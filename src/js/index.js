@@ -18,5 +18,10 @@ $(function() {
         loop: true,
         slidesPerView: 3,
         spaceBetween: 20,
+        slideActiveClass: 'apartment-slider__slide_active',
+        navigation: {
+            nextEl: '.apartment-slider__next',
+            prevEl: '.apartment-slider__prev',
+        },
     })
 });

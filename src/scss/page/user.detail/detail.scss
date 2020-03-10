@@ -1,0 +1,65 @@
+.user-detail {
+    display: flex;
+    justify-content: space-between;
+
+    &__aside {
+        width: 235px;
+    }
+    &__pict {
+        margin: 0 0 25px;
+    }
+    &__block {
+        width: calc(100% - 260px);
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid var(--gray2);
+        margin: 0 0 30px;
+    }
+    &__item {
+        width: 33.3%;
+        margin: 0 0 20px;
+    }
+    &__label {
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--gray2);
+    }
+    &__value {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 30px;
+    }
+    &__bold {
+        margin: 5px 0 0;
+        font-weight: bold;
+    }
+    &__part {
+
+        &-first {
+            width: 235px;
+        }
+        &-last {
+            width: 235px;
+            margin: 0 0 0 auto;
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 430px;
+    }
+    &__text {
+        margin: 0 0 20px;
+    }
+    &__right {
+        width: 235px;
+    }
+}

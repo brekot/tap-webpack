@@ -1,0 +1,125 @@
+<% var data = {
+    title: "Taptoru - Объект недвижимости"
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<a href="javascript:;" class="main-main__back">← на главную страницу</a>    
+
+<div class="page-head page-head_small-margin">
+    <h1 class="page-head__title">Иван Иванов</h1>
+    <div class="page-head__status page-head__status_online">в сети</div>
+</div>
+
+<div class="page-sub-head">
+    <span>
+        Зарегестрирован 23 ноября 2016 года
+    </span>
+    <span>
+        <a href="javascript:;" class="favorite-btn">
+            <svg>
+                <use xlink:href="/local/img/sprite.svg#icon-favorite"></use>
+            </svg>
+            Добавить в избранные
+        </a>
+    </span>
+</div>
+
+<div class="user-detail">
+    <aside class="user-detail__aside">
+        <div class="user-detail__pict">
+            <img src="/local/upload/user.list.jpg" alt="">
+        </div>
+        <a href="javascript:;" class="btn btn-full-width btn-white">Написать сообщение</a>
+        <div class="user-aside-btn">
+            <a href="javascript:;" class="btn btn-full-width btn-lg btn-red">Показать все контакты</a>
+            <div class="user-aside-btn__link">
+                Требуется <a href="javascript:;">подписка</a>
+            </div>
+        </div>
+    </aside>
+    <div class="user-detail__block">
+
+        <div class="user-detail__items">
+            <div class="user-detail__item">
+                <div class="user-detail__label">Город проживания</div>
+                <div class="user-detail__value">Москва</div>
+            </div>
+            <div class="user-detail__item">
+                <div class="user-detail__label">Возраст</div>
+                <div class="user-detail__value">25 лет</div>
+            </div>
+            <div class="user-detail__item">
+                <div class="user-detail__label">Семейное положение</div>
+                <div class="user-detail__value">женат, двое детей</div>
+            </div>
+            <div class="user-detail__item">
+                <div class="user-detail__label">Вредные привычки</div>
+                <div class="user-detail__value">не курю</div>
+            </div>
+            <div class="user-detail__item">
+                <div class="user-detail__label">Животные</div>
+                <div class="user-detail__value">кошка</div>
+            </div>
+        </div>
+
+        <div class="user-detail__info">
+            <div class="user-detail__part-first">
+                <div class="user-detail__label">Готов платить</div>
+                <div class="user-detail__value user-detail__bold">15 000 р./мес.</div>
+            </div>
+            <div class="user-detail__part">
+                <div class="user-detail__label">На срок</div>
+                <div class="user-detail__value user-detail__bold">январь - май 2020</div>
+            </div>
+            <div class="user-detail__part-last">
+                <div class="user-detail__label">Хочу жить возле</div>
+                <div class="user-detail__value user-detail__bold">
+                    <a href="javascript::">м. Славянский бульвар</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="user-detail__inner">
+            <div class="user-detail__left">
+                <div class="user-detail__text">
+                    Подселюсь к ребятам в 3хкомнатную квартиру, могу платить каждый месяц, люблю музыку, без вредных привычек, хочу пожить 3 меясца на время, пока не найду отдельное жилье. Буду рад, если у кого нибудь есть нотубук, чтоб вместе играть в контр страйк
+                </div>
+                <div class="tags">
+                    <a href="javascript:;" class="tags__link">#теги</a>
+                    <a href="javascript:;" class="tags__link">#теги</a>
+                    <a href="javascript:;" class="tags__link">#тегидлинные</a>
+                    <a href="javascript:;" class="tags__link">#тегидлинныеикороткие</a>
+                </div>
+            </div>
+            <div class="user-detail__right">
+                <div class="map-block">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3d79c7d81e2d2bb86febc98c685d15871cce13e1fd1d95297c90a508038a3bdd&amp;width=100%&amp;height=270&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+
+        <div class="share-complaint">
+            <div class="share-complaint__share">
+                <div class="share-complaint__share-title">Поделиться</div>
+
+                <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                <script src="https://yastatic.net/share2/share.js"></script>
+
+                <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki"></div>
+            </div>
+            <div>
+                <a class="share-complaint__complaint" href="javascript:;">Пожаловаться на объявление</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<% var data = {
+    title: "ДРУГИЕ ОБЪЯВЛЕНИЯ ПОЛЬЗОВАТЕЛЯ&nbsp;&nbsp;●&nbsp;&nbsp;1"
+}; %>
+
+<%= _.template(require('./../includes/apartment_more.html'))(data) %>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

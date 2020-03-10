@@ -1,5 +1,5 @@
 .main-main {
-    padding: 40px 0 100px;
+    padding: 40px 0 50px;
     overflow: hidden;
 
     &__back {
@@ -7,6 +7,10 @@
         font-size: 14px;
         display: inline-block;
         margin: 0 0 30px;
+
+        &:hover {
+            color: var(--red);
+        }
     }
 
     &__with-aside {

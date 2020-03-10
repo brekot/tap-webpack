@@ -74,17 +74,30 @@
         align-items: center;
 
         &:hover {
-            color: var(--gray1);
+            color: var(--red);
         }
-        &_ads {
-            background-image: url(img/header.ads.svg);
+    }
+    &__icon {
+        margin: 0 10px 0 0;
+        fill: transparent;
+        stroke: var(--gray1);
+        transition: all .3s linear;
+
+        &-ads {
+            width: 15px;
+            height: 14px;
         }
-        &_favorite {
-            background-image: url(img/header.favorite.svg);
+        &-favorite {
+            width: 16px;
+            height: 15px;
         }
-        &_message {
-            background-image: url(img/header.message.svg);
+        &-message {
+            width: 14px;
+            height: 13px;
         }
+    }
+    &__link:hover .header-links__icon {
+        stroke: var(--red);
     }
     &__count {
         background: var(--orange);

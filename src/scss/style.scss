@@ -20,8 +20,12 @@
 @import "./elem/table"; // Таблицы
 @import "./elem/comfort"; // Список удобств с иконками
 @import "./elem/page.head"; // Заголовоки страниц
-@import "./elem/share.complaint"; // Пожаловаться/Поделиться
+@import "./elem/page.sub.head"; // Подзаголовоки страниц
+@import "./elem/share.complaint"; // Пожаловаться / Поделиться
 @import "./elem/apartment.more"; // Похожие объявления
+@import "./elem/favorite"; // Кнопк В избранное
+@import "./elem/sort"; // Сортировка
+@import "./elem/user.aside.btn"; // Написать сообщение / Показать все контакты
 
 // Список недвижимости
 @import "./page/apartment.list/list"; // Список
@@ -33,3 +37,6 @@
 
 // Список пользователей
 @import "./page/user.list/list"; // Список
+
+// Пользователь
+@import "./page/user.detail/detail"; // Детальная
