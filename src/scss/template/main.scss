@@ -7,4 +7,22 @@
         display: inline-block;
         margin: 0 0 30px;
     }
+
+    &__with-aside {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__work-block {
+        width: calc(100% - 350px);
+    }
+    &__short-block {
+        max-width: 490px;
+    }
+}
+
+.main-aside {
+    width: 320px;
+    background-color: var(--gray6);
+    padding: 45px 45px 15px;
 }

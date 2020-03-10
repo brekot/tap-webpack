@@ -1,16 +1,20 @@
 @import "./main/variables"; // Переменные
 @import "./main/reboot"; // Сброс стилей
 @import "./main/grid"; // Сетка + миксины
+@import "./main/jquery.formstyler"; // Стилизация элементов
 
 // Шаблон
 @import "./template/header"; // Шапка
 @import "./template/menu.search"; // Меню/Поиск
+@import "./template/menu.aside"; // Меню справа
 @import "./template/main"; // Рабочая облать
 @import "./template/footer"; // Подвал
 
 // Элементы
 @import "./elem/btn"; // Кнопки
 @import "./elem/tags"; // Теги
+@import "./elem/tabs"; // Табы
+@import "./elem/form"; // Формы
 @import "./elem/map"; // Карты
 @import "./elem/page.head"; // Заголовоки страниц
 

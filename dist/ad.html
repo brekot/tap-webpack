@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet" />
+
+        <title>Taptoru - Элементы</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link href="./local/template_styles.css?3493c4c3d8d2a85c2ee5" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header class="main-header">
+            <div class="container">
+                <div class="main-header__inner">
+                    <div class="main-header__left">
+                        <a href="/" class="main-header__logo">
+                            <img src="/local/img/logo.png" alt="" />
+                        </a>
+                        <a href="/" class="main-header__logo-word">
+                            <img src="/local/img/logo.word.png" alt="" />
+                        </a>
+                        <div class="change-city">
+                            <a href="javascript:;" class="change-city__link">Нижний Новгород</a>
+                        </div>
+                    </div>
+                    <div class="main-header__center">
+                        <div class="header-links">
+                            <a href="javascript:;" class="header-links__link header-links__link_ads">Мои объявления</a>
+                            <a href="javascript:;" class="header-links__link header-links__link_favorite">Избранные объявления</a>
+                            <a href="javascript:;" class="header-links__link header-links__link_message">
+                                Сообщения
+                                <span class="header-links__count">345</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-header__right">
+                        <div class="header-user">
+                            <a href="javascript:;" class="header-user__link header-user__online">
+                                <img class="header-user__avatar" src="/local/upload/user.avatar.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="menu-search">
+            <div class="container">
+                <div class="menu-search__inner">
+                    <div>
+                        <nav class="menu-top">
+                            <a href="javascript:;" class="menu-top__link menu-top__link_active">Снять</a>
+                            <a href="javascript:;" class="menu-top__link">Купить</a>
+                            <a href="javascript:;" class="menu-top__link">Найти сожителя</a>
+                        </nav>
+                    </div>
+                    <div>
+                        <div class="search-filter">
+                            <form>
+                                <div class="search-filter__inner">
+                                    <input class="search-filter__input" type="text" value="" placeholder="Поиск" />
+                                    <a href="javascript:;" class="search-filter__link">
+                                        Фильтры
+                                        <span class="search-filter__count">3</span>
+                                    </a>
+                                    <button class="search-filter__button" type="submit">Найти</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main-main">
+            <div class="container">
+                <div class="main-main__with-aside">
+                    <div class="main-main__work-block">
+                        <h1>Подача объявления</h1>
+
+                        <div class="tabs-panel">
+                            <a class="tabs-panel__tab" href="javascript:;">Снять</a>
+                            <a class="tabs-panel__tab" href="javascript:;">Сдать</a>
+                            <a class="tabs-panel__tab tabs-panel__tab_active" href="javascript:;">Купить</a>
+                            <a class="tabs-panel__tab" href="javascript:;">Продать</a>
+                        </div>
+
+                        <div class="tabs-panel">
+                            <a class="tabs-panel__tab" href="javascript:;">Комнату</a>
+                            <a class="tabs-panel__tab tabs-panel__tab_active" href="javascript:;">Квартиру</a>
+                            <a class="tabs-panel__tab" href="javascript:;">Дом</a>
+                        </div>
+
+                        <div class="tabs-panel">
+                            <a class="tabs-panel__tab" href="javascript:;">Длительно</a>
+                            <a class="tabs-panel__tab tabs-panel__tab_active" href="javascript:;">Несколько месяцев</a>
+                            <a class="tabs-panel__tab" href="javascript:;">Посуточно</a>
+                        </div>
+
+                        <div class="main-main__short-block">
+                            <div class="form-one">
+                                <div class="form-one__line">
+                                    <label class="form-one__label">Адрес</label>
+                                    <input class="form-one__input" type="text" placeholder="Начинайте писать название улицы" value="" />
+                                </div>
+                            </div>
+
+                            <div class="map-block">
+                                <script
+                                    type="text/javascript"
+                                    charset="utf-8"
+                                    async
+                                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3d79c7d81e2d2bb86febc98c685d15871cce13e1fd1d95297c90a508038a3bdd&amp;width=100%&amp;height=265&amp;lang=ru_RU&amp;scroll=true"
+                                ></script>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <h2>Информация о здании</h2>
+
+                        <div class="main-main__short-block">
+                            <div class="form-one">
+                                <div class="form-one__line">
+                                    <label class="form-one__label">Название жилого комплекса</label>
+                                    <input class="form-one__input" type="text" placeholder="Начинайте писать название комплекса" value="" />
+                                </div>
+                                <div class="form-one__parts">
+                                    <div class="form-one__part">
+                                        <label class="form-one__label">Год постройки</label>
+                                        <select class="select-one">
+                                            <option>2020</option>
+                                            <option>2019</option>
+                                            <option>2018</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-one__part">
+                                        <label class="form-one__label">Высота потолков</label>
+                                        <select class="select-one">
+                                            <option>3,0 м</option>
+                                            <option>2,8 м</option>
+                                            <option>2,6 м</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-one__parts">
+                                    <div class="form-one__part">
+                                        <div class="form-one__label">Лифт</div>
+                                        <div class="checkbox-toggle">
+                                            <input class="checkbox-toggle__input" type="checkbox" value="" id="toggle1" checked="checked" />
+                                            <label for="toggle1" class="checkbox-toggle__switch">
+                                                <div class="checkbox-toggle__item checkbox-toggle__set">Есть</div>
+                                                <div class="checkbox-toggle__item checkbox-toggle__unset">Нет</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-one__part">
+                                        <label class="form-one__label">Газ</label>
+                                        <div class="checkbox-toggle">
+                                            <input class="checkbox-toggle__input" type="checkbox" value="" id="toggle2" checked="checked" />
+                                            <label for="toggle2" class="checkbox-toggle__switch">
+                                                <div class="checkbox-toggle__item checkbox-toggle__set">Есть</div>
+                                                <div class="checkbox-toggle__item checkbox-toggle__unset">Нет</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-one__parts">
+                                    <div class="form-one__part">
+                                        <div class="form-one__label">Мусоропровод</div>
+                                        <div class="checkbox-toggle">
+                                            <input class="checkbox-toggle__input" type="checkbox" value="" id="toggle3" checked="checked" />
+                                            <label for="toggle3" class="checkbox-toggle__switch">
+                                                <div class="checkbox-toggle__item checkbox-toggle__set">Есть</div>
+                                                <div class="checkbox-toggle__item checkbox-toggle__unset">Нет</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-one__part">
+                                        <label class="form-one__label">Пандусы</label>
+                                        <div class="checkbox-toggle">
+                                            <input class="checkbox-toggle__input" type="checkbox" value="" id="toggle4" checked="checked" />
+                                            <label for="toggle4" class="checkbox-toggle__switch">
+                                                <div class="checkbox-toggle__item checkbox-toggle__set">Есть</div>
+                                                <div class="checkbox-toggle__item checkbox-toggle__unset">Нет</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <h2>Описание объекта</h2>
+
+                        <div class="form-one">
+                            <div class="form-one__line">
+                                <div class="form-one__label">Количество комнат</div>
+                                <div class="checkbox-line">
+                                    <input class="checkbox-line__input" name="checkbox1" type="checkbox" value="" id="toggle10" />
+                                    <label for="toggle10" class="checkbox-line__label">Студия</label>
+                                    <input class="checkbox-line__input" name="checkbox1" type="checkbox" value="" id="toggle11" />
+                                    <label for="toggle11" class="checkbox-line__label">1</label>
+                                    <input class="checkbox-line__input" name="checkbox1" type="checkbox" value="" id="toggle12" />
+                                    <label for="toggle12" class="checkbox-line__label">2</label>
+                                    <input class="checkbox-line__input" name="checkbox1" type="checkbox" value="" id="toggle13" checked="checked" />
+                                    <label for="toggle13" class="checkbox-line__label">3</label>
+                                    <input class="checkbox-line__input" name="checkbox1" type="checkbox" value="" id="toggle14" />
+                                    <label for="toggle14" class="checkbox-line__label">4</label>
+                                    <input class="checkbox-line__input" name="checkbox1" type="checkbox" value="" id="toggle15" />
+                                    <label for="toggle15" class="checkbox-line__label">5</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-main__short-block">
+                            <div class="form-one">
+                                <div class="form-one__parts">
+                                    <div class="form-one__part">
+                                        <div class="form-one__label">Площадь общая</div>
+                                        <input class="form-one__input" type="text" placeholder="2019" value="" />
+                                    </div>
+                                    <div class="form-one__part">
+                                        <div class="form-one__label">Площадь жилая</div>
+                                        <input class="form-one__input" type="text" placeholder="2019" value="" />
+                                    </div>
+                                    <div class="form-one__part">
+                                        <div class="form-one__label">Площадь жилая</div>
+                                        <input class="form-one__input" type="text" placeholder="2019" value="" />
+                                    </div>
+                                    <div class="form-one__part">
+                                        <div class="form-one__label">Этаж</div>
+                                        <input class="form-one__input" type="text" placeholder="2019" value="" />
+                                    </div>
+                                    <div class="form-one__part">
+                                        <div class="form-one__label">Этажей в доме</div>
+                                        <input class="form-one__input" type="text" placeholder="2019" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-one">
+                            <div class="form-one__line">
+                                <div class="form-one__label">Санузел</div>
+                                <div class="checkbox-line">
+                                    <input class="checkbox-line__input" name="checkbox2" type="radio" value="" id="toggle20" checked="checked" />
+                                    <label for="toggle20" class="checkbox-line__label">Совмещенный</label>
+                                    <input class="checkbox-line__input" name="checkbox2" type="radio" value="" id="toggle21" />
+                                    <label for="toggle21" class="checkbox-line__label">Раздельный</label>
+                                    <input class="checkbox-line__input" name="checkbox2" type="radio" value="" id="toggle22" />
+                                    <label for="toggle22" class="checkbox-line__label">Более одного</label>
+                                </div>
+                            </div>
+                            <div class="form-one__line">
+                                <div class="form-one__label">Балкон/лоджия</div>
+                                <div class="checkbox-line">
+                                    <input class="checkbox-line__input" name="checkbox3" type="radio" value="" id="toggle30" checked="checked" />
+                                    <label for="toggle30" class="checkbox-line__label">Нет</label>
+                                    <input class="checkbox-line__input" name="checkbox3" type="radio" value="" id="toggle31" />
+                                    <label for="toggle31" class="checkbox-line__label">1</label>
+                                    <input class="checkbox-line__input" name="checkbox3" type="radio" value="" id="toggle32" />
+                                    <label for="toggle32" class="checkbox-line__label">2</label>
+                                    <input class="checkbox-line__input" name="checkbox3" type="radio" value="" id="toggle33" />
+                                    <label for="toggle33" class="checkbox-line__label">3 и более</label>
+                                </div>
+                            </div>
+                            <div class="form-one__line">
+                                <div class="form-one__label">Ремонт</div>
+                                <div class="checkbox-line">
+                                    <input class="checkbox-line__input" name="checkbox4" type="radio" value="" id="toggle40" checked="checked" />
+                                    <label for="toggle40" class="checkbox-line__label">Черновой</label>
+                                    <input class="checkbox-line__input" name="checkbox4" type="radio" value="" id="toggle41" />
+                                    <label for="toggle41" class="checkbox-line__label">Косметический</label>
+                                    <input class="checkbox-line__input" name="checkbox4" type="radio" value="" id="toggle42" />
+                                    <label for="toggle42" class="checkbox-line__label">Евро</label>
+                                    <input class="checkbox-line__input" name="checkbox4" type="radio" value="" id="toggle43" />
+                                    <label for="toggle43" class="checkbox-line__label">Дизайнерский</label>
+                                </div>
+                            </div>
+                            <div class="form-one__line">
+                                <div class="form-one__label">Удобства</div>
+                                <div class="checkbox-blocks">
+                                    <input class="checkbox-blocks__input" name="checkbox5" type="checkbox" value="" id="toggle50" checked="checked" />
+                                    <label for="toggle50" class="checkbox-blocks__label">Телевизор</label>
+                                    <input class="checkbox-blocks__input" name="checkbox5" type="checkbox" value="" id="toggle51" />
+                                    <label for="toggle51" class="checkbox-blocks__label">Стиралка</label>
+                                    <input class="checkbox-blocks__input" name="checkbox5" type="checkbox" value="" id="toggle52" />
+                                    <label for="toggle52" class="checkbox-blocks__label">Холодильник</label>
+                                    <input class="checkbox-blocks__input" name="checkbox5" type="checkbox" value="" id="toggle53" />
+                                    <label for="toggle53" class="checkbox-blocks__label">Кондиционер</label>
+                                    <input class="checkbox-blocks__input" name="checkbox5" type="checkbox" value="" id="toggle54" />
+                                    <label for="toggle54" class="checkbox-blocks__label">Мебель</label>
+                                    <input class="checkbox-blocks__input" name="checkbox5" type="checkbox" value="" id="toggle55" checked="checked" />
+                                    <label for="toggle55" class="checkbox-blocks__label">Душевая</label>
+                                    <input class="checkbox-blocks__input" name="checkbox5" type="checkbox" value="" id="toggle56" />
+                                    <label for="toggle56" class="checkbox-blocks__label">Ковры</label>
+                                    <input class="checkbox-blocks__input" name="checkbox5" type="checkbox" value="" id="toggle57" />
+                                    <label for="toggle57" class="checkbox-blocks__label">Wi-fi</label>
+                                    <input class="checkbox-blocks__input" name="checkbox5" type="checkbox" value="" id="toggle58" />
+                                    <label for="toggle58" class="checkbox-blocks__label">Кух.принадлежности</label>
+                                    <input class="checkbox-blocks__input" name="checkbox5" type="checkbox" value="" id="toggle59" />
+                                    <label for="toggle59" class="checkbox-blocks__label">Ванна</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <h2>Фотографии</h2>
+
+                        <div class="block-photo">
+                            <div class="block-photo__part">
+                                <div class="file-add">
+                                    <input type="file" value="" class="file-add__input" />
+                                </div>
+                            </div>
+                            <div class="block-photo__part">
+                                <div class="photo-one">
+                                    <div class="photo-one__pict">
+                                        <img src="/local/upload/file.img.jpg" alt="" />
+                                        <input class="photo-one__input" type="checkbox" value="" id="pict-one" />
+                                        <label class="photo-one__label" for="pict-one"></label>
+                                    </div>
+                                    <a href="javascript:;">Удалить</a>
+                                </div>
+                            </div>
+                            <div class="block-photo__part">
+                                <div class="photo-one">
+                                    <div class="photo-one__pict">
+                                        <img src="/local/upload/file.img.jpg" alt="" />
+                                        <input class="photo-one__input" type="checkbox" value="" id="pict-two" checked="checked" />
+                                        <label class="photo-one__label" for="pict-two"></label>
+                                    </div>
+                                    <a href="javascript:;">Удалить</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <h2>Цена</h2>
+
+                        <div class="form-one">
+                            <div class="form-one__line">
+                                <div class="input-select">
+                                    <input class="input-select__input" type="text" value="" />
+                                    <select>
+                                        <option>Руб/мес</option>
+                                        <option>Руб/нед</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-one__line">
+                                <div class="checkbox-one">
+                                    <input class="checkbox-one__input" type="checkbox" value="" id="checkbox-two" />
+                                    <label class="checkbox-one__label checkbox-one__label_gray" for="checkbox-two" class="form-one__label">
+                                        Торг
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-one__line">
+                                <div class="form-one__label">Предоплата</div>
+                                <div class="checkbox-line">
+                                    <input class="checkbox-line__input" name="checkbox6" type="radio" value="" id="toggle60" />
+                                    <label for="toggle60" class="checkbox-line__label">Нет</label>
+                                    <input class="checkbox-line__input" name="checkbox6" type="radio" value="" id="toggle61" checked="checked" />
+                                    <label for="toggle61" class="checkbox-line__label">1</label>
+                                    <input class="checkbox-line__input" name="checkbox6" type="radio" value="" id="toggle62" />
+                                    <label for="toggle62" class="checkbox-line__label">2</label>
+                                    <input class="checkbox-line__input" name="checkbox6" type="radio" value="" id="toggle63" />
+                                    <label for="toggle63" class="checkbox-line__label">3 и более месяцев</label>
+                                </div>
+                            </div>
+                            <div class="form-one__line">
+                                <label class="form-one__label">Залог</label>
+                                <div class="form-one__rub">
+                                    <input class="form-one__input form-one__rub-input" type="text" placeholder="" value="" />
+                                    <span>руб</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <h2>Контакты</h2>
+
+                        <div class="main-main__short-block">
+                            <div class="form-one">
+                                <div class="form-one__line">
+                                    <label class="form-one__label">Ваше имя</label>
+                                    <input class="form-one__input" type="text" placeholder="Как вас зовут" value="" />
+                                </div>
+                                <div class="form-one__line">
+                                    <label class="form-one__label">Ваш e-mail</label>
+                                    <input class="form-one__input" type="text" placeholder="Ваша электронная почта" value="" />
+                                </div>
+                                <div class="form-one__line">
+                                    <label class="form-one__label">Контактный телефон</label>
+                                    <input class="form-one__input" type="text" placeholder="Введите номер для связи" value="" />
+                                </div>
+                                <div class="form-one__line">
+                                    <div class="checkbox-one">
+                                        <input class="checkbox-one__input" type="checkbox" value="" id="checkbox-one" />
+                                        <label class="checkbox-one__label" for="checkbox-one" class="form-one__label"> Согласен с <a href="javascript:;">Условиями</a> </label>
+                                    </div>
+                                </div>
+                                <div class="form-one__btn">
+                                    <button type="submit" class="btn btn-red btn-lg">Опубликовать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="main-aside">
+                        <nav class="menu-aside">
+                            <a href="javascript:;" class="menu-aside__link menu-aside__link_active">Тип объявления</a>
+                            <a href="javascript:;" class="menu-aside__link">Местоположение</a>
+                            <a href="javascript:;" class="menu-aside__link">Информация о здании</a>
+                            <a href="javascript:;" class="menu-aside__link">Описание объявления</a>
+                            <a href="javascript:;" class="menu-aside__link">Фотографии</a>
+                            <a href="javascript:;" class="menu-aside__link">Цена и условия</a>
+                            <a href="javascript:;" class="menu-aside__link">Контакты</a>
+                            <a href="javascript:;" class="menu-aside__link">Условия размещения</a>
+                        </nav>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="main-footer__inner">
+                    <div class="main-footer__left">
+                        <a href="/" class="main-footer__logo">
+                            <img src="/local/img/logo.png" alt="" />
+                        </a>
+                        <a href="/" class="main-footer__logo-word">
+                            <img src="/local/img/logo.word.png" alt="" />
+                        </a>
+                        <div class="main-footer__desc">
+                            Сервис по подбору жилья
+                        </div>
+                    </div>
+                    <div class="main-footer__right">
+                        <nav class="menu-footer">
+                            <a href="javascript:;" class="menu-footer__link">Пользовательское соглашение</a>
+                            <a href="javascript:;" class="menu-footer__link">Условия размещения</a>
+                            <a href="javascript:;" class="menu-footer__link">Прочая документация</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./local/js/script.js?3493c4c3d8d2a85c2ee5"></script>
+    </body>
+</html>
