@@ -1,0 +1,35 @@
+.user-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 25px;
+
+    &__pict {
+        width: 140px;
+    }
+    &__img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% - 170px);
+        padding: 20px 0 0;
+    }
+    &__item {
+        width: 33.3%;
+        margin: 0 0 20px;
+    }
+    &__label {
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--gray2);
+        margin: 0 0 3px;
+    }
+    &__value {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}

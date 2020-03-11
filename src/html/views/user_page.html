@@ -1,0 +1,91 @@
+<% var data = {
+    title: "Taptoru - Объект недвижимости"
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<a href="javascript:;" class="main-main__back">← на главную страницу</a>    
+
+<div class="page-head page-head_small-margin">
+    <h1 class="page-head__title">Иван Иванов</h1>
+    <div class="page-head__status page-head__status_online">в сети</div>
+</div>
+
+<div class="page-sub-head">
+    <span>
+        Зарегестрирован 23 ноября 2016 года
+    </span>
+</div>
+
+<div class="user-page">
+    <div class="user-page__pict">
+        <img class="user-page__img" src="/local/upload/user.list.jpg" alt="">
+    </div>
+    <div class="user-page__items">
+        <div class="user-page__item">
+            <div class="user-page__label">Город проживания</div>
+            <div class="user-page__value">Москва</div>
+        </div>
+        <div class="user-page__item">
+            <div class="user-page__label">Возраст</div>
+            <div class="user-page__value">25 лет</div>
+        </div>
+        <div class="user-page__item">
+            <div class="user-page__label">Семейное положение</div>
+            <div class="user-page__value">женат, двое детей</div>
+        </div>
+        <div class="user-page__item">
+            <div class="user-page__label">Вредные привычки</div>
+            <div class="user-page__value">не курю</div>
+        </div>
+        <div class="user-page__item">
+            <div class="user-page__label">Животные</div>
+            <div class="user-page__value">кошка</div>
+        </div>
+    </div>
+</div>
+
+<div class="apartment-line">
+    <div class="apartment-line__title">ДРУГИЕ ОБЪЯВЛЕНИЯ ПОЛЬЗОВАТЕЛЯ&nbsp;&nbsp;●&nbsp;&nbsp;1</div>
+    <div class="apartment-line__items">
+        <div class="apartment-line__item">
+            <a href="javascript::" class="apartment-line__pict">
+                <img class="apartment-line__img" src="/local/upload/apartment.line.jpg" alt="">
+            </a>
+            <div class="apartment-line__block">
+                <a href="javascript::" class="apartment-line__name">
+                    Сдаю хату нормальным ребятам
+                </a>
+                <div class="apartment-line__info">
+                    <div class="apartment-line__part">
+                        <div class="apartment-line__label">
+                            Плата за месяц
+                        </div>
+                        <div class="apartment-line__value">
+                            15 000 р./мес.
+                        </div>
+                    </div>
+                    <div class="apartment-line__part">
+                        <div class="apartment-line__label">
+                            Находится
+                        </div>
+                        <div class="apartment-line__value">
+                            <a href="javascript:;">м. Славянский бульвар</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartment-line__text">
+                    Подселюсь к ребятам в 3хкомнатную квартиру, могу платить каждый месяц, люблю музыку, без вредных привычек, хочу пожить 3 меясца на время, пока не найду отдельное жилье. Буду рад, если у кого нибудь есть нотубук, чтоб вместе играть в контр страйк
+                </div>
+                <div class="tags">
+                    <a href="javascript:;" class="tags__link">#теги</a>
+                    <a href="javascript:;" class="tags__link">#теги</a>
+                    <a href="javascript:;" class="tags__link">#тегидлинные</a>
+                    <a href="javascript:;" class="tags__link">#тегидлинныеикороткие</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

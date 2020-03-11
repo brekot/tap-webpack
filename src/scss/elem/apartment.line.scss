@@ -1,0 +1,56 @@
+.apartment-line {
+    border-top: 2px solid var(--gray5);
+    padding: 25px 0 0;
+
+    &__title {
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 0 0 25px;
+        color: var(--gray3);
+    }
+    &__items {}
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 25px 0 0;
+    }
+    &__pict {
+        width: 235px;
+    }
+    &__img {}
+    &__block {
+        width: calc(100% - 270px);
+    }
+    &__name {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 0 10px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__info {
+        display: flex;
+        margin: 0 0 25px;
+    }
+    &__part {
+        width: 250px;
+    }
+    &__label {
+        font-size: 14px;
+        line-height: 16px;
+        color: #C4C4C4;
+        margin: 0 0 5px;
+    }
+    &__value {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__text {
+        margin: 0 0 10px;
+    }
+}

@@ -22,7 +22,8 @@
 @import "./elem/page.head"; // Заголовоки страниц
 @import "./elem/page.sub.head"; // Подзаголовоки страниц
 @import "./elem/share.complaint"; // Пожаловаться / Поделиться
-@import "./elem/apartment.more"; // Похожие объявления
+@import "./elem/apartment.more"; // Похожие объявления (плитка)
+@import "./elem/apartment.line"; // Похожие объявления (список)
 @import "./elem/favorite"; // Кнопк В избранное
 @import "./elem/sort"; // Сортировка
 @import "./elem/user.aside.btn"; // Написать сообщение / Показать все контакты
@@ -40,3 +41,6 @@
 
 // Пользователь
 @import "./page/user.detail/detail"; // Детальная
+
+// Пользователь еще
+@import "./page/user.page/page"; // Детальная
