@@ -89,3 +89,110 @@
         text-align: center;
     }
 }
+
+@include media-breakpoint-only(lg)
+{
+    .user-list__pict_mobile {
+        display: none;
+    }
+}
+@include media-breakpoint-between(sm, md)
+{
+    .user-list {
+
+        &__pict {
+            width: 120px;
+
+            &_pc {
+                display: none;
+            }
+        }
+        &__block {
+            width: 100%;
+            padding: 25px 25px 65px;
+        }
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 15px;
+
+            &-inner {
+                width: calc(100% - 140px);
+            }
+        }
+        &__head {
+
+            &-first {
+                max-width: 100%;
+            }
+        }
+        &__favorite {
+            position: absolute;
+            margin: 0;
+            left: 25px;
+            bottom: 30px;
+        }
+        &__more {
+            position: absolute;
+            right: 25px;
+            bottom: 25px;
+            margin: 0;
+        }
+        &__info {
+            flex-wrap: wrap;
+            margin: 0 0 15px;
+
+            &-item {
+                margin: 0 0 15px;
+                width: 50%;
+            }
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .user-list {
+
+        &__item {
+            flex-direction: column;
+        }
+        &__block {
+            width: 100%;
+            padding: 25px 25px 65px;
+        }
+        &__pict {
+            width: 100%;
+
+            &_mobile {
+                display: none;
+            }
+        }
+        &__head {
+
+            &-first {
+                max-width: 100%;
+            }
+        }
+        &__favorite {
+            position: absolute;
+            margin: 0;
+            left: 25px;
+            bottom: 30px;
+        }
+        &__more {
+            position: absolute;
+            right: 25px;
+            bottom: 25px;
+            margin: 0;
+        }
+        &__info {
+            flex-wrap: wrap;
+            margin: 0 0 15px;
+
+            &-item {
+                margin: 0 0 15px;
+                width: 50%;
+            }
+        }
+    }
+}

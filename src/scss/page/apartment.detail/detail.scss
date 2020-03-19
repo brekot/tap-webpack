@@ -10,6 +10,22 @@
     }
 }
 
+@include media-breakpoint-down(md)
+{
+    .apartment-detail {
+        flex-direction: column;
+
+        &__block {
+            width: 100%;
+            order: 2;
+        }
+        &__aside {
+            width: 100%;
+            order: 1;
+        }
+    }
+}
+
 .apartment-detail-one {
     display: flex;
     padding: 0 0 35px;

@@ -31,3 +31,14 @@
     background-color: var(--gray6);
     padding: 45px 45px 15px;
 }
+
+@include media-breakpoint-down(md)
+{
+    .main-main__work-block {
+        width: 100%;
+    }
+
+    .main-aside {
+        display: none;
+    }
+}

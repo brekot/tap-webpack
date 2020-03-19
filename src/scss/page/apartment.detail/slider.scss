@@ -46,3 +46,14 @@
         }
     }
 }
+
+@include media-breakpoint-down(md)
+{
+    .apartment-slider {
+
+        &__prev,
+        &__next {
+            display: none;
+        }
+    }
+}

@@ -6,3 +6,10 @@
     font-size: 14px;
     justify-content: space-between;
 }
+
+@include media-breakpoint-down(md)
+{
+    .page-sub-head__mobile-hide {
+        display: none;
+    }
+}

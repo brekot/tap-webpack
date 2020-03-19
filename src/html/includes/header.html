@@ -28,19 +28,19 @@
                             <svg class="header-links__icon header-links__icon-ads">
                                 <use xlink:href="/local/img/sprite.svg#icon-ads"></use>
                             </svg>
-                            Мои объявления
+                            <span class="header-links__text">Мои объявления</span>
                         </a>
                         <a href="javascript:;" class="header-links__link">
                             <svg class="header-links__icon header-links__icon-favorite">
                                 <use xlink:href="/local/img/sprite.svg#header-favorite"></use>
                             </svg>
-                            Избранные объявления
+                            <span class="header-links__text">Избранные объявления</span>
                         </a>
                         <a href="javascript:;" class="header-links__link">
                             <svg class="header-links__icon header-links__icon-message">
                                 <use xlink:href="/local/img/sprite.svg#icon-message"></use>
                             </svg>
-                            Сообщения
+                            <span class="header-links__text">Сообщения</span>
                             <span class="header-links__count">345</span>
                         </a>
                     </div>
@@ -70,7 +70,7 @@
                         <form>
                             <div class="search-filter__inner">
                                 <input class="search-filter__input" type="text" value="" placeholder="Поиск">
-                                <a href="javascript:;" class="search-filter__link">
+                                <a href="javascript:;" class="search-filter__link" data-fancybox data-src="#window">
                                     Фильтры
                                     <span class="search-filter__count">3</span>
                                 </a>
@@ -78,6 +78,11 @@
                             </div>
                         </form>
                     </div>
+                    <a href="javascript:;" class="search-filter-btn">
+                        <svg class="search-filter-btn__icon">
+                            <use xlink:href="/local/img/sprite.svg#icon-find"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

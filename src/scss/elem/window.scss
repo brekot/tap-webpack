@@ -1,0 +1,18 @@
+.window-filter {
+    display: none;
+    width: 500px;
+    overflow: visible;
+
+    &__block {
+        width: 320px;
+    }
+    &__range {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 15px;
+
+        & > * {
+            max-width: 85px;
+        }
+    }
+}

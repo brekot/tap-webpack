@@ -2,6 +2,8 @@
 @import "./main/reboot"; // Сброс стилей
 @import "./main/grid"; // Сетка + миксины
 @import "./main/jquery.formstyler"; // Стилизация элементов
+@import "./main/jquery.fancybox"; // Окна
+@import "./main/range.slider"; // Слайдер цен
 @import "~swiper/src/swiper"; // Слайдер
 
 // Шаблон
@@ -27,6 +29,7 @@
 @import "./elem/favorite"; // Кнопк В избранное
 @import "./elem/sort"; // Сортировка
 @import "./elem/user.aside.btn"; // Написать сообщение / Показать все контакты
+@import "./elem/window"; // Окна
 
 // Список недвижимости
 @import "./page/apartment.list/list"; // Список

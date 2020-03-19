@@ -24,5 +24,52 @@
             </div>
         </div>
     </footer>
+
+    <div class="window-filter" id="window">
+        <div class="h1">Параметры поиска</div>
+        <div class="window-filter__block">
+            <div class="form-one">
+                <div class="form-one__line">
+                    <label class="form-one__label">Количество комнат</label>
+                    <select class="select-one">
+                        <option>Однокомнатная</option>
+                        <option>Двухкомнатная</option>
+                        <option>Трехкомнатная</option>
+                    </select>
+                </div>
+                <div class="form-one__line">
+                    <label class="form-one__label">Пункт метро</label>
+                    <select class="select-one" multiple>
+                        <option>По всей Казани</option>
+                        <option>м. Дубравная</option>
+                        <option>м. Проспект Победы</option>
+                        <option>м. Горки</option>
+                        <option>м. Суконная Слобода</option>
+                        <option>м. Площадь Тукая</option>
+                        <option>м. Кремлевская</option>
+                        <option>Трехкомнатная</option>
+                    </select>
+                </div>
+                <div class="form-one__line">
+                    <label class="form-one__label">Сумма аренды в месяц</label>
+                    <input id="price-range" value="">
+                    <div class="window-filter__range">
+                        <input value="5 000" class="form-one__input form-one__input_sm" id="price-range-from">
+                        <input value="15 000" class="form-one__input form-one__input_sm" id="price-range-to">
+                    </div>
+                    <div class="checkbox-one">
+                        <input class="checkbox-one__input" type="checkbox" value="" id="checkbox-one">
+                        <label class="checkbox-one__label checkbox-one__label_sm" for="checkbox-one">
+                            к/у включены
+                        </label>
+                    </div>
+                </div>
+                <div class="form-one__btn">
+                    <button type="submit" class="btn btn-red btn-lg">Поиск объявлений</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

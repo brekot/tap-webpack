@@ -1,29 +1,59 @@
-.tabs-panel {
-    background-color: var(--white);
-    border: 1px solid var(--red);
-    box-shadow: 0 0 2px rgba(170,108,28,.5);
-    border-radius: 5px;
-    display: inline-flex;
-    margin: 0 0 20px;
+@include media-breakpoint-up(sm)
+{
+    .tabs-panel {
+        background-color: var(--white);
+        border: 1px solid var(--red);
+        box-shadow: 0 0 2px rgba(170,108,28,.5);
+        border-radius: 5px;
+        display: inline-flex;
+        margin: 0 0 20px;
 
-    &__tab {
-        font-size: 18px;
-        line-height: 48px;
-        color: var(--black);
-        text-decoration: none;
-        padding: 0 20px;
-        border-right: 1px solid var(--red);
+        &__tab {
+            font-size: 18px;
+            line-height: 48px;
+            color: var(--black);
+            text-decoration: none;
+            padding: 0 20px;
+            border-right: 1px solid var(--red);
 
-        &:last-child {
-            border: none;
+            &:last-child {
+                border: none;
+            }
+            &:hover {
+                color: var(--red);
+            }
+            &_active,
+            &_active:hover {
+                background-color: var(--red);
+                color: var(--white);
+            }
         }
-        &:hover {
-            color: var(--red);
-        }
-        &_active,
-        &_active:hover {
-            background-color: var(--red);
-            color: var(--white);
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .tabs-panel {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__tab {
+            background-color: var(--white);
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 38px;
+            padding: 0 15px;
+            border: 1px solid var(--red);
+            cursor: pointer;
+            transition: all .3s linear;
+            margin: 0 10px 10px 0;
+            text-decoration: none;
+            color: var(--black);
+
+            &_active {
+                background-color: var(--red);
+                color: var(--white);
+            }
         }
     }
 }

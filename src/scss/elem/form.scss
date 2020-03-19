@@ -16,7 +16,7 @@
     &__label {
         font-size: 18px;
         line-height: 21px;
-        margin: 0 0 15px;
+        margin: 0 0 10px;
         display: block;
     }
     &__input {
@@ -35,6 +35,11 @@
         &:focus {
             box-shadow: 0 0 2px var(--black);
         }
+        &_sm {
+            height: 24px;
+            padding: 0 10px;
+            font-size: 14px;
+        }
     }
     &__rub {
         display: flex;
@@ -44,6 +49,24 @@
         &-input {
             width: 150px;
             margin: 0 20px 0 0;
+        }
+    }
+}
+
+@include media-breakpoint-only(xs)
+{
+    .form-one {
+
+        &__part {
+            width: 50%;
+        }
+        &__label {
+            font-size: 16px;
+        }
+        &__input  {
+            font-size: 16px;
+            padding: 0 15px;
+            height: 40px;
         }
     }
 }
@@ -106,6 +129,29 @@
     }
 }
 
+@include media-breakpoint-only(xs)
+{
+    .select-one {
+
+        .jq-selectbox {
+
+            &__select {
+                font-size: 16px;
+                padding: 0 15px;
+                height: 40px;
+                line-height: 38px;
+            }
+            &__dropdown {
+                line-height: 38px;
+                font-size: 16px;
+            }
+        }
+        li {
+            padding: 0 15px;
+        }
+    }
+}
+
 .checkbox-toggle {
     position: relative;
 
@@ -140,38 +186,89 @@
     }
 }
 
-.checkbox-line {
-    background-color: var(--white);
-    border: 1px solid var(--red);
-    box-shadow: 0 0 2px rgba(170,108,28,.5);
-    border-radius: 5px;
-    display: inline-flex;
-    position: relative;
-
-    &__input {
-        position: absolute;
-        opacity: 0;
+@include media-breakpoint-only(xs)
+{
+    .checkbox-toggle__item {
+        line-height: 38px;
+        font-size: 16px;
     }
-    &__label {
-        font-size: 18px;
-        line-height: 48px;
-        color: var(--black);
-        text-decoration: none;
-        padding: 0 20px;
-        border-right: 1px solid var(--red);
-        cursor: pointer;
-        transition: all .3s linear;
+}
 
-        &:last-child {
-            border: none;
+
+@include media-breakpoint-up(sm)
+{
+    .checkbox-line {
+        background-color: var(--white);
+        border: 1px solid var(--red);
+        box-shadow: 0 0 2px rgba(170,108,28,.5);
+        border-radius: 5px;
+        display: inline-flex;
+        position: relative;
+
+        &__input {
+            position: absolute;
+            opacity: 0;
         }
-        &:hover {
-            color: var(--red);
+        &__label {
+            font-size: 18px;
+            line-height: 48px;
+            color: var(--black);
+            text-decoration: none;
+            padding: 0 20px;
+            border-right: 1px solid var(--red);
+            cursor: pointer;
+            transition: all .3s linear;
+
+            &:last-child {
+                border: none;
+            }
+            &:hover {
+                color: var(--red);
+            }
+        }
+        &__input:checked + .checkbox-line__label {
+            background-color: var(--red);
+            color: var(--white);
         }
     }
-    &__input:checked + .checkbox-line__label {
-        background-color: var(--red);
-        color: var(--white);
+}
+@include media-breakpoint-only(sm)
+{
+    .checkbox-line__label {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .checkbox-line {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__input {
+            position: absolute;
+            opacity: 0;
+        }
+        &__label {
+            background-color: var(--white);
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 38px;
+            padding: 0 15px;
+            border: 1px solid var(--red);
+            cursor: pointer;
+            transition: all .3s linear;
+            margin: 0 10px 10px 0;
+
+            &:hover {
+                color: var(--red);
+            }
+        }
+        &__input:checked + .checkbox-line__label {
+            background-color: var(--red);
+            color: var(--white);
+        }
     }
 }
 
@@ -202,6 +299,19 @@
     &__input:checked + .checkbox-blocks__label {
         background-color: var(--red);
         color: var(--white);
+    }
+}
+
+@include media-breakpoint-only(xs)
+{
+    .checkbox-blocks {
+
+        &__label {
+            font-size: 16px;
+            line-height: 38px;
+            padding: 0 15px;
+            margin: 0 10px 10px 0;
+        }
     }
 }
 
@@ -250,6 +360,17 @@
         &_gray:not(:hover) {
             color: var(--gray3);
         }
+        &_sm {
+            padding: 0 0 0 30px;
+
+            &:before {
+                height: 20px;
+                width: 20px;
+            }
+            &:after {
+               left: 7px; 
+            }
+        }
     }
     &__input:checked + .checkbox-one__label:after {
         display: block;
@@ -265,8 +386,19 @@
     }
 }
 
+@include media-breakpoint-only(xs)
+{
+    .block-photo {
+
+        &__part {
+            width: 100px;
+            margin: 0 10px 0 0;
+        }
+    }
+}
+
 .file-add {
-    background: url(img/file.add.svg) no-repeat 50%;
+    background: url(img/file.add.svg) no-repeat 50% / cover;
     height: 150px;
     width: 150px;
     position: relative;
@@ -280,6 +412,14 @@
         bottom: 0;
         max-width: 100%;
         cursor: pointer;
+    }
+}
+
+@include media-breakpoint-only(xs)
+{
+    .file-add {
+        height: 100px;
+        width: 100px;
     }
 }
 
@@ -321,6 +461,30 @@
             transform: rotate(45deg);
             top: 6px;
             left: 11px;
+        }
+    }
+}
+
+@include media-breakpoint-only(xs)
+{
+    .photo-one {
+        width: 100px;
+        font-size: 16px;
+
+        &__label {
+            top: 10px;
+            right: 10px;
+            height: 30px;
+            width: 30px;
+            border: 2px dashed var(--white);
+        }
+        &__input:checked + .photo-one__label {
+            border: 2px solid var(--white);
+
+            &:before {
+                top: 3px;
+                left: 8px;
+            }
         }
     }
 }
@@ -391,6 +555,20 @@
         &.selected {
             background-color: var(--red);
             color: var(--white)
+        }
+    }
+}
+
+@include media-breakpoint-only(xs)
+{
+    .input-select {
+        width: 100%;
+
+        &__input {
+            width: 200px;
+        }
+        .jq-selectbox {
+            width: calc(100% - 200px);
         }
     }
 }

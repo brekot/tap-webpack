@@ -7,7 +7,7 @@
 
         <title>Taptoru - Главная</title>
         <link rel="shortcut icon" href="favicon.ico" />
-        <link href="./local/template_styles.css?1ab2d01e5d011f9790ee" rel="stylesheet" />
+        <link href="./local/template_styles.css?a693119830b4c4cc6f6c" rel="stylesheet" />
     </head>
 
     <body>
@@ -31,19 +31,19 @@
                                 <svg class="header-links__icon header-links__icon-ads">
                                     <use xlink:href="/local/img/sprite.svg#icon-ads"></use>
                                 </svg>
-                                Мои объявления
+                                <span class="header-links__text">Мои объявления</span>
                             </a>
                             <a href="javascript:;" class="header-links__link">
                                 <svg class="header-links__icon header-links__icon-favorite">
                                     <use xlink:href="/local/img/sprite.svg#header-favorite"></use>
                                 </svg>
-                                Избранные объявления
+                                <span class="header-links__text">Избранные объявления</span>
                             </a>
                             <a href="javascript:;" class="header-links__link">
                                 <svg class="header-links__icon header-links__icon-message">
                                     <use xlink:href="/local/img/sprite.svg#icon-message"></use>
                                 </svg>
-                                Сообщения
+                                <span class="header-links__text">Сообщения</span>
                                 <span class="header-links__count">345</span>
                             </a>
                         </div>
@@ -73,7 +73,7 @@
                             <form>
                                 <div class="search-filter__inner">
                                     <input class="search-filter__input" type="text" value="" placeholder="Поиск" />
-                                    <a href="javascript:;" class="search-filter__link">
+                                    <a href="javascript:;" class="search-filter__link" data-fancybox data-src="#window">
                                         Фильтры
                                         <span class="search-filter__count">3</span>
                                     </a>
@@ -81,6 +81,11 @@
                                 </div>
                             </form>
                         </div>
+                        <a href="javascript:;" class="search-filter-btn">
+                            <svg class="search-filter-btn__icon">
+                                <use xlink:href="/local/img/sprite.svg#icon-find"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -112,6 +117,53 @@
                 </div>
             </div>
         </footer>
-        <script type="text/javascript" src="./local/js/script.js?1ab2d01e5d011f9790ee"></script>
+
+        <div class="window-filter" id="window">
+            <div class="h1">Параметры поиска</div>
+            <div class="window-filter__block">
+                <div class="form-one">
+                    <div class="form-one__line">
+                        <label class="form-one__label">Количество комнат</label>
+                        <select class="select-one">
+                            <option>Однокомнатная</option>
+                            <option>Двухкомнатная</option>
+                            <option>Трехкомнатная</option>
+                        </select>
+                    </div>
+                    <div class="form-one__line">
+                        <label class="form-one__label">Пункт метро</label>
+                        <select class="select-one" multiple="multiple">
+                            <option>По всей Казани</option>
+                            <option>м. Дубравная</option>
+                            <option>м. Проспект Победы</option>
+                            <option>м. Горки</option>
+                            <option>м. Суконная Слобода</option>
+                            <option>м. Площадь Тукая</option>
+                            <option>м. Кремлевская</option>
+                            <option>Трехкомнатная</option>
+                        </select>
+                    </div>
+                    <div class="form-one__line">
+                        <label class="form-one__label">Сумма аренды в месяц</label>
+                        <input id="price-range" value="" />
+                        <div class="window-filter__range">
+                            <input value="5 000" class="form-one__input form-one__input_sm" id="price-range-from" />
+                            <input value="15 000" class="form-one__input form-one__input_sm" id="price-range-to" />
+                        </div>
+                        <div class="checkbox-one">
+                            <input class="checkbox-one__input" type="checkbox" value="" id="checkbox-one" />
+                            <label class="checkbox-one__label checkbox-one__label_sm" for="checkbox-one">
+                                к/у включены
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-one__btn">
+                        <button type="submit" class="btn btn-red btn-lg">Поиск объявлений</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./local/js/script.js?a693119830b4c4cc6f6c"></script>
     </body>
 </html>

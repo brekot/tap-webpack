@@ -8,6 +8,10 @@
     &__pict {
         margin: 0 0 25px;
     }
+    &__img {
+        display: block;
+        width: 100%;
+    }
     &__block {
         width: calc(100% - 260px);
     }
@@ -61,5 +65,129 @@
     }
     &__right {
         width: 235px;
+    }
+}
+
+@include media-breakpoint-only(lg)
+{
+    .user-detail__mobile-show {
+        display: none;
+    }
+}
+@include media-breakpoint-between(sm, md)
+{
+    .user-detail {
+        flex-direction: column;
+
+        &__aside {
+            width: 100%;
+            display: flex;
+            margin: 0 0 30px;
+            justify-content: space-between;
+            max-width: 520px;
+        }
+        &__pict {
+            margin: 0;
+        }
+        &__aside-btn {
+            width: calc(100% - 255px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__mobile-show {
+            margin: 25px 0 0;
+        }
+        &__block {
+            width: 100%;
+        }
+    }
+}
+@include media-breakpoint-only(sm)
+{
+    .user-detail {
+
+        &__item {
+            width: 50%;
+            margin: 0 0 20px;
+        }
+        &__info {
+            margin: 0;
+        }
+        &__part,
+        &__part-first {
+            width: 50%;
+            margin: 0 0 20px;
+
+            &-last {
+                width: 100%;
+                margin: 0 0 20px;
+            }
+        }
+        &__inner {
+            flex-direction: column;
+        }
+        &__left {
+            width: 100%;
+            order: 2;
+        }
+        &__text {
+            margin: 20px 0;
+        }
+        &__right {
+            width: 100%;
+            order: 1;
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .user-detail {
+        flex-direction: column;
+
+        &__aside {
+            width: 100%;
+            margin: 0 0 30px;
+
+            &-btn {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__mobile-show {
+            margin: 25px 0 0;
+        }
+        &__block {
+            width: 100%;
+        }
+        &__item {
+            width: 100%;
+            margin: 0 0 20px;
+        }
+        &__info {
+            margin: 0;
+        }
+        &__part,
+        &__part-last,
+        &__part-first {
+            width: 100%;
+            margin: 0 0 20px;
+        }
+        &__inner {
+            flex-direction: column;
+        }
+        &__left {
+            width: 100%;
+            order: 2;
+        }
+        &__text {
+            margin: 20px 0;
+        }
+        &__right {
+            width: 100%;
+            order: 1;
+        }
     }
 }

@@ -54,3 +54,10 @@
         }
     }
 }
+
+@include media-breakpoint-down(md)
+{
+    .block-sort {
+        justify-content: flex-start;
+    }
+}
