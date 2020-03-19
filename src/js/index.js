@@ -1,6 +1,7 @@
 import $ from "jquery";
 import formstyler from './jquery.formstyler.min.js';
 import range from './range.slider.min.js';
+import multiselect from './multiselect.min.js';
 import { Swiper, Navigation } from 'swiper/js/swiper.esm.js';
 
 Swiper.use([Navigation]);
@@ -17,7 +18,11 @@ function numberWithSpaces(x)
 
 $(function() {
 
-    $('select').styler();
+    $('select:not(.multiselect)').styler({
+        selectSmartPositioning: false
+    });
+
+    document.multiselect('#multiselect');
 
     $('.apartment-detail__show-all').click(function(){
 
@@ -27,13 +32,23 @@ $(function() {
 
     new Swiper ('.apartment-slider__slider', {
         loop: true,
-        slidesPerView: 3,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 10,
         slideActiveClass: 'apartment-slider__slide_active',
         navigation: {
             nextEl: '.apartment-slider__next',
             prevEl: '.apartment-slider__prev',
         },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+        }
     });
 
     if ($("#price-range").length > 0)

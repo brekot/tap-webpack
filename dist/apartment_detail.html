@@ -7,7 +7,7 @@
 
         <title>Taptoru - Объект недвижимости</title>
         <link rel="shortcut icon" href="favicon.ico" />
-        <link href="./local/template_styles.css?a693119830b4c4cc6f6c" rel="stylesheet" />
+        <link href="./local/template_styles.css?0e9bf386c3e388a88346" rel="stylesheet" />
     </head>
 
     <body>
@@ -178,16 +178,20 @@
                             </div>
                         </div>
 
-                        <div class="apartment-detail-one">
-                            <div class="apartment-detail-one__left">
+                        <div class="apartment-detail-two">
+                            <div class="apartment-detail-two__left">
                                 <div class="apartment-place">
-                                    <a href="javascript:;" class="apartment-place__link">м. Славянский бульвар</a>
-                                    <div class="apartment-place__desc">15 минут пешком</div>
-                                    <div class="apartment-place__addr">г. Казань, Приволжский район, ул. Габишева, 57</div>
-                                    <div class="apartment-place__desc">ЖК Город</div>
+                                    <div class="apartment-place__left">
+                                        <a href="javascript:;" class="apartment-place__link">м. Славянский бульвар</a>
+                                        <div class="apartment-place__desc">15 минут пешком</div>
+                                    </div>
+                                    <div class="apartment-place__right">
+                                        <div class="apartment-place__addr">г. Казань, Приволжский район, ул. Габишева, 57</div>
+                                        <div class="apartment-place__desc">ЖК Город</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="apartment-detail-one__right">
+                            <div class="apartment-detail-two__right">
                                 <div class="map-block">
                                     <script
                                         type="text/javascript"
@@ -262,23 +266,35 @@
                     </div>
                     <aside class="apartment-detail__aside">
                         <div class="apartment-aside">
+                            <div class="apartment-aside__favorite">
+                                <a href="javascript:;" class="favorite-btn">
+                                    <svg>
+                                        <use xlink:href="/local/img/sprite.svg#icon-favorite"></use>
+                                    </svg>
+                                    Добавить в избранные
+                                </a>
+                            </div>
                             <div class="apartment-aside__price">15 000 руб/мес</div>
                             <div class="apartment-aside__info">
                                 без к/у&nbsp;&nbsp;●&nbsp;&nbsp;залог на месяц
                             </div>
-                            <div class="user-aside">
-                                <div class="user-aside__pict">
-                                    <img class="user-aside__img" src="/local/upload/user.list.jpg" alt="" />
+                            <div class="apartment-aside__left">
+                                <div class="user-aside">
+                                    <div class="user-aside__pict">
+                                        <img class="user-aside__img" src="/local/upload/user.list.jpg" alt="" />
+                                    </div>
+                                    <div class="user-aside__info">
+                                        <div class="user-aside__name">Иван Иванов</div>
+                                        <div class="user-aside__status user-aside__status_online">в сети</div>
+                                    </div>
                                 </div>
-                                <div class="user-aside__info">
-                                    <div class="user-aside__name">Иван Иванов</div>
-                                    <div class="user-aside__status user-aside__status_online">в сети</div>
-                                </div>
+                                <a href="javascript:;" class="btn btn-full-width btn-white">Написать сообщение</a>
                             </div>
-                            <a href="javascript:;" class="btn btn-full-width btn-white">Написать сообщение</a>
-                            <div class="user-aside-btn">
-                                <a href="javascript:;" class="btn btn-full-width btn-lg btn-red">Показать все контакты</a>
-                                <div class="user-aside-btn__link">Требуется <a href="javascript:;">подписка</a></div>
+                            <div class="apartment-aside__right">
+                                <div class="user-aside-btn">
+                                    <a href="javascript:;" class="btn btn-full-width btn-lg btn-red">Показать все контакты</a>
+                                    <div class="user-aside-btn__link">Требуется <a href="javascript:;">подписка</a></div>
+                                </div>
                             </div>
                         </div>
                     </aside>
@@ -405,7 +421,7 @@
                     </div>
                     <div class="form-one__line">
                         <label class="form-one__label">Пункт метро</label>
-                        <select class="select-one" multiple="multiple">
+                        <select class="multiselect" id="multiselect" multiple="multiple">
                             <option>По всей Казани</option>
                             <option>м. Дубравная</option>
                             <option>м. Проспект Победы</option>
@@ -413,7 +429,6 @@
                             <option>м. Суконная Слобода</option>
                             <option>м. Площадь Тукая</option>
                             <option>м. Кремлевская</option>
-                            <option>Трехкомнатная</option>
                         </select>
                     </div>
                     <div class="form-one__line">
@@ -437,6 +452,6 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="./local/js/script.js?a693119830b4c4cc6f6c"></script>
+        <script type="text/javascript" src="./local/js/script.js?0e9bf386c3e388a88346"></script>
     </body>
 </html>

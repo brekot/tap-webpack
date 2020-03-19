@@ -57,3 +57,15 @@
         }
     }
 }
+@include media-breakpoint-only(sm)
+{
+    .apartment-slider {
+        width: 910px;
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .apartment-slider {
+        width: 100%;
+    }
+}

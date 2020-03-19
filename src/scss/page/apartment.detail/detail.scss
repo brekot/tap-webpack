@@ -41,6 +41,75 @@
     }
 }
 
+@include media-breakpoint-between(sm, md)
+{
+    .apartment-detail-one {
+        justify-content: space-between;
+
+        &__left {
+            width: calc(50% - 10px);
+            padding: 0;
+        }
+        &__right {
+            width: calc(50% - 10px);
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .apartment-detail-one {
+        flex-direction: column;
+
+        &__left,
+        &__right {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+.apartment-detail-two {
+    display: flex;
+    padding: 0 0 35px;
+    margin: 0 0 35px;
+    border-bottom: 1px solid var(--gray5);
+
+    &__left {
+        width: 260px;
+        padding: 0 35px 0 0;
+    }
+    &__right {
+        width: calc(100% - 260px);
+    }
+}
+
+@include media-breakpoint-between(sm, md)
+{
+    .apartment-detail-two {
+        flex-direction: column;
+
+        &__left {
+            width: 100%;
+            padding: 0 0 25px;
+        }
+        &__right {
+            width: 100%;
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .apartment-detail-two {
+        flex-direction: column;
+
+        &__left,
+        &__right {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
 .apartment-place {
 
     &__link {
@@ -56,6 +125,28 @@
     }
     &__addr {
         margin: 20px 0 10px;
+    }
+}
+
+@include media-breakpoint-between(sm, md)
+{
+    .apartment-place {
+        display: flex;
+        justify-content: space-between;
+
+        &__left,
+        &__right {
+            width: calc(50% - 10px);
+        }
+        &__addr {
+            margin: 0 0 5px;
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .apartment-place {
+        margin: 0 0 25px;
     }
 }
 

@@ -4,7 +4,7 @@
     overflow: visible;
 
     &__block {
-        width: 320px;
+        max-width: 320px;
     }
     &__range {
         display: flex;

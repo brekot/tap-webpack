@@ -95,18 +95,22 @@
             </div>
         </div>
 
-        <div class="apartment-detail-one">
-            <div class="apartment-detail-one__left">
+        <div class="apartment-detail-two">
+            <div class="apartment-detail-two__left">
 
                 <div class="apartment-place">
-                    <a href="javascript:;" class="apartment-place__link">м. Славянский бульвар</a>
-                    <div class="apartment-place__desc">15 минут пешком</div>
-                    <div class="apartment-place__addr">г. Казань, Приволжский район, ул. Габишева, 57</div>
-                    <div class="apartment-place__desc">ЖК Город</div>
+                    <div class="apartment-place__left">
+                        <a href="javascript:;" class="apartment-place__link">м. Славянский бульвар</a>
+                        <div class="apartment-place__desc">15 минут пешком</div>
+                    </div>
+                    <div class="apartment-place__right">
+                        <div class="apartment-place__addr">г. Казань, Приволжский район, ул. Габишева, 57</div>
+                        <div class="apartment-place__desc">ЖК Город</div>
+                    </div>
                 </div>
 
             </div>
-            <div class="apartment-detail-one__right">
+            <div class="apartment-detail-two__right">
 
                 <div class="map-block">
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3d79c7d81e2d2bb86febc98c685d15871cce13e1fd1d95297c90a508038a3bdd&amp;width=100%&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -181,24 +185,36 @@
     <aside class="apartment-detail__aside">
 
         <div class="apartment-aside">
+            <div class="apartment-aside__favorite">
+                <a href="javascript:;" class="favorite-btn">
+                    <svg>
+                        <use xlink:href="/local/img/sprite.svg#icon-favorite"></use>
+                    </svg>
+                    Добавить в избранные
+                </a>
+            </div>
             <div class="apartment-aside__price">15 000 руб/мес</div>
             <div class="apartment-aside__info">
                 без к/у&nbsp;&nbsp;●&nbsp;&nbsp;залог на месяц
             </div>
-            <div class="user-aside">
-                <div class="user-aside__pict">
-                    <img class="user-aside__img" src="/local/upload/user.list.jpg" alt="">
+            <div class="apartment-aside__left">
+                <div class="user-aside">
+                    <div class="user-aside__pict">
+                        <img class="user-aside__img" src="/local/upload/user.list.jpg" alt="">
+                    </div>
+                    <div class="user-aside__info">
+                        <div class="user-aside__name">Иван Иванов</div>
+                        <div class="user-aside__status user-aside__status_online">в сети</div>
+                    </div>
                 </div>
-                <div class="user-aside__info">
-                    <div class="user-aside__name">Иван Иванов</div>
-                    <div class="user-aside__status user-aside__status_online">в сети</div>
-                </div>
+                <a href="javascript:;" class="btn btn-full-width btn-white">Написать сообщение</a>
             </div>
-            <a href="javascript:;" class="btn btn-full-width btn-white">Написать сообщение</a>
-            <div class="user-aside-btn">
-                <a href="javascript:;" class="btn btn-full-width btn-lg btn-red">Показать все контакты</a>
-                <div class="user-aside-btn__link">
-                    Требуется <a href="javascript:;">подписка</a>
+            <div class="apartment-aside__right">
+                <div class="user-aside-btn">
+                    <a href="javascript:;" class="btn btn-full-width btn-lg btn-red">Показать все контакты</a>
+                    <div class="user-aside-btn__link">
+                        Требуется <a href="javascript:;">подписка</a>
+                    </div>
                 </div>
             </div>
         </div>
