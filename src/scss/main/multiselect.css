@@ -1,107 +1,137 @@
-﻿.multiselect-wrapper {
-	width: 180px;
-	display: inline-block;
-	white-space: nowrap;
-	font-size: 12px;
-	font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+﻿.multiselect-block {
+    height: 50px;
+    position: relative;
+    width: 100%;
 }
 
-.multiselect-wrapper .multiselect-input {
-	width: 120px;
-	padding-right: 50px;
+.multiselect-wrapper {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
 }
 
 .multiselect-wrapper label {
 	display: block;
-	font-size: 12px;
-	font-weight : 600;
+    position: relative;
+    padding: 0 0 0 30px;
 }
 
 .multiselect-wrapper .multiselect-list {
-	z-index: 1;
-	position: absolute;
 	display: none;
 	background-color: white;
-	border: 1px solid grey;
-	border-bottom-left-radius: 2px;
-	border-bottom-right-radius: 2px;
-	margin-top: -2px;
 }
 
-	.multiselect-wrapper .multiselect-list.active {
+	.multiselect-wrapper.active .multiselect-list {
 		display: block;
 	}
 
 	.multiselect-wrapper .multiselect-list > span {
-		font-weight: bold;
+		display: none !important;
 	}
 
 	.multiselect-wrapper .multiselect-list .multiselect-checkbox {
-		margin-right: 2px;
-	}
+        position: absolute;
+        opacity: 0;
+    }
 
 	.multiselect-wrapper .multiselect-list > span,
 	.multiselect-wrapper .multiselect-list li {
 		cursor: default;
 	}
 
-.multiselect-wrapper .multiselect-list {
-	padding: 5px;
-	min-width: 200px;
-}
-
 .multiselect-wrapper ul {
 	list-style: none;
 	display: block;
 	position: relative;
-	padding: 0px;
-	margin: 0px;
+	padding: 0 0 15px;
+	margin: 0;
 	max-height: 200px;
 	overflow-y: auto;
 	overflow-x: hidden;
+    line-height: 30px;
 }
 
-	.multiselect-wrapper ul li {
-		padding-right: 20px;
-		display: block;
-	}
-
-		.multiselect-wrapper ul li.active {
-			background-color: rgb(0, 102, 255);
-			color: white;
-		}
-
-		.multiselect-wrapper ul li:hover {
-			background-color: rgb(0, 102, 255);
-			color: white;
-		}
+.multiselect-wrapper ul li {
+    padding: 0 20px;
+    display: block;
+}
 
 .multiselect-input-div {
-	height: 34px;
+    background: var(--white);
+    box-shadow: 0 0 2px rgba(170,108,28,.5);
+    border-radius: 5px;
+    color: var(--gray1);
+    font-size: 18px;
+    height: 50px;
+    line-height: 48px;
+    position: relative;
+    cursor: pointer;
 }
 
-	.multiselect-input-div input{
-		border: 1px solid #ababab;
-		background : #fff;
-		margin: 5px 0 6px 0;
-		padding: 5px;
-		vertical-align:middle;
-	}
+.multiselect-wrapper:not(.active) .multiselect-input-div {
+    transition: all .3s linear;
+}
 
-.multiselect-count {
+.multiselect-input-div:hover {
+    box-shadow: 0 0 2px var(--black);
+}
+
+.multiselect-wrapper.active {
+    box-shadow: 0px 0px 10px rgba(170, 108, 28, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.multiselect-wrapper.active .multiselect-input-div {
+    box-shadow: none;
+}
+
+.multiselect-input-div input {
+    border: none;
+    background: transparent;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--gray1);
+    pointer-events: none;
+    padding: 0 40px 0 20px;
+    text-overflow: ellipsis;
+}
+
+.multiselect-count,
+.multiselect-list hr {
 	display: none !important;
 }
 
 .multiselect-dropdown-arrow {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 5px solid black;
-	position: absolute;
-	line-height: 20px;
-	text-align: center;
-	display: inline-block !important;
-	margin-top: 17px;
-	margin-left: -42px;
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    border: 6px solid transparent;
+    border-top: 10px solid var(--gray2);
+    margin: -5px 0 0;
+}
+
+.multiselect-text:before {
+    border: 1px solid var(--gray2);
+    border-radius: 3px;
+    content: "";
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.multiselect-wrapper li.active .multiselect-text:after {
+    content: "";
+    border-left: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+    position: absolute;
+    height: 5px;
+    width: 9px;
+    left: 4px;
+    top: calc(50% - 1px);
+    transform: translate(0, -50%) rotate(-45deg);
 }

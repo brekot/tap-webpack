@@ -7,7 +7,7 @@
 
         <title>Taptoru - Список недвижимости</title>
         <link rel="shortcut icon" href="favicon.ico" />
-        <link href="./local/template_styles.css?0e9bf386c3e388a88346" rel="stylesheet" />
+        <link href="./local/template_styles.css?e761c1535b59de2ce896" rel="stylesheet" />
     </head>
 
     <body>
@@ -430,14 +430,13 @@
                     </div>
                     <div class="form-one__line">
                         <label class="form-one__label">Пункт метро</label>
-                        <select class="multiselect" id="multiselect" multiple="multiple">
-                            <option>По всей Казани</option>
-                            <option>м. Дубравная</option>
-                            <option>м. Проспект Победы</option>
-                            <option>м. Горки</option>
-                            <option>м. Суконная Слобода</option>
-                            <option>м. Площадь Тукая</option>
-                            <option>м. Кремлевская</option>
+                        <select name="multiselect[]" class="multiselect" id="multiselect" multiple="multiple" data-full="По всей Казани">
+                            <option value="1" selected="selected">м. Дубравная</option>
+                            <option value="2" selected="selected">м. Проспект Победы</option>
+                            <option value="3" selected="selected">м. Горки</option>
+                            <option value="4" selected="selected">м. Суконная Слобода</option>
+                            <option value="5" selected="selected">м. Площадь Тукая</option>
+                            <option value="6" selected="selected">м. Кремлевская</option>
                         </select>
                     </div>
                     <div class="form-one__line">
@@ -461,6 +460,6 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="./local/js/script.js?0e9bf386c3e388a88346"></script>
+        <script type="text/javascript" src="./local/js/script.js?e761c1535b59de2ce896"></script>
     </body>
 </html>
